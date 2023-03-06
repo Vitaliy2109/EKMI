@@ -1,0 +1,21 @@
+#mapSection {
+  margin-bottom: 160px;
+  padding-top: 80px;
+  .container {
+    h2.title {
+      margin-bottom: 30px;
+    }
+  }
+  .map-wrap {
+    height: 619px;
+    .leaflet-container {
+      height: 100%;
+      .leaflet-left {
+        z-index: 400;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}

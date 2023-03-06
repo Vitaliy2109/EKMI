@@ -1,98 +1,177 @@
-[
-  {
-    "city": "Вінниця",
-    "adress": "Вул. Келицька 117 Б",
-    "adressLink": "https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9A%D0%B5%D0%BB%D0%B5%D1%86%D0%BA%D0%B0%D1%8F,+117-%D0%91,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/@49.2272409,28.3960271,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5c458ccb2c7f:0xa611b3651de41a5f!8m2!3d49.2272409!4d28.3960271!16s%2Fg%2F11b8v6lmy2",
-    "location": "ТЦ «ПЛАЗА Парк»",
-    "mail": "makoviy_marina@mail.ru",
-    "phone": "+38 067 432 14 22"
-  },
-  {
-    "city": "Вінниця",
-    "adress": "Вул. Зодчих, 5",
-    "adressLink": "https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%BE%D0%B4%D1%87%D0%B8%D1%85,+5,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/@49.218548,28.4498624,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5b8673b5d9fb:0x39cf1b3b224774ad!8m2!3d49.218548!4d28.4498624!16s%2Fg%2F11bw3z8j_y",
-    "location": "Меблевий салон «МІА»",
-    "mail": "miavinnitsa@gmail.com",
-    "phone": "+38 067 430 81 81"
-  },
-  {
-    "city": "Вінниця",
-    "adress": "Вул. Келицька, 81",
-    "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9A%D0%B5%D0%BB%D0%B5%D1%86%D1%8C%D0%BA%D0%B0,+81,+%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F,+%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/data=!4m2!3m1!1s0x472d5c42f3798a4f:0xd1fed3e2a661ceca?sa=X&ved=2ahUKEwikyZOKisX9AhURposKHasPBSQQ8gF6BAgVEAI",
-    "location": "Салон меблі 'Зефір' ",
-    "mail": "zefir.vip@gmail.com",
-    "phone": " +38 067 986 10 64"
-  },
-  {
-    "city": "Івано-Франківськ",
-    "adress": "Вул. Стуса, 30 Д",
-    "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8F+%D0%A1%D1%82%D1%83%D1%81%D0%B0,+30,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+76000/data=!4m2!3m1!1s0x4730c181156e77c7:0xe16001b18fdca258?sa=X&ved=2ahUKEwj2rf3EisX9AhURl4sKHXcvAjQQ8gF6BAgTEAI",
-    "location": "Інтер'єр-магазин 'ВІЖЕН' ",
-    "mail": "vizhen@ukr.net",
-    "phone": "+38 095 0-500-888"
-  },
-  {
-    "city": "Кременчуг",
-    "adress": "Вул. Першотравнева 57 Б",
-    "adressLink": "https://www.google.com/maps/place/%D0%9F%D0%B5%D1%80%D1%88%D0%BE%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%B2%D0%B0+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F,+57%D0%B1,+%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+39600/data=!4m2!3m1!1s0x40d7533cc75d695b:0xd669b44610927102?sa=X&ved=2ahUKEwjxw-f3isX9AhUXDRAIHUfhBeoQ8gF6BAgcEAI",
-    "location": "Меблевий салон 'ЕЛЕГАНС' ",
-    "mail": " mebelelegance@gmail.com",
-    "phone": " +38 053 674 03 12"
-  },
-  {
-    "city": "Луцьк",
-    "adress": "Вул. Єршова 11а",
-    "adressLink": "https://www.google.com/maps/place/%D0%9F%D0%B5%D1%80%D1%88%D0%BE%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%B2%D0%B0+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F,+57%D0%B1,+%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+39600/data=!4m2!3m1!1s0x40d7533cc75d695b:0xd669b44610927102?sa=X&ved=2ahUKEwjxw-f3isX9AhUXDRAIHUfhBeoQ8gF6BAgcEAI",
-    "location": "Меблевий салон 'Авіва' ",
-    "mail": "avivalutsk@gmail.com",
-    "phone": "+38 050 969 77"
-  },
-  {
-    "city": "Львів",
-    "adress": "Вул. Княгині Ольги, 95",
-    "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9A%D0%BD%D1%8F%D0%B3%D0%B8%D0%BD%D1%96+%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8,+95,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/data=!4m2!3m1!1s0x473ae7b9609c27a7:0x69a5ad554ff0bf51?sa=X&ved=2ahUKEwj786bei8X9AhWR_CoKHdVWB_MQ8gF6BAgNEAI",
-    "location": "ТЦ «MARK» 1 поверх, секція №113.",
-    "mail": "ekmilviv@ukr.net",
-    "phone": "+38 097 093 96 79"
-  },
-  {
-    "city": "Миколаїв",
-    "adress": "пр. Жовтневий 234 Б",
-    "adressLink": "https://www.google.com/maps/place/%D0%91%D0%BE%D0%B3%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+234%D0%91,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+54000/data=!4m2!3m1!1s0x40c5ccbfab5e337b:0xc81550a647cf8423?sa=X&ved=2ahUKEwjOhOKVjMX9AhWUy4sKHZgtD6YQ8gF6BAgYEAI",
-    "location": "ТЦ «Мій Дім», салон мебелі «Европа»",
-    "mail": " grand2004@hotbox.ru",
-    "phone": "+38 050 493 58 24"
-  },
-  {
-    "city": "Полтава",
-    "adress": "Вул. Європейська, 107",
-    "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%84%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B0,+107,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+36000/data=!4m2!3m1!1s0x40d82f41a839e173:0x23152bfc26237ba6?sa=X&ved=2ahUKEwiMk-_TjMX9AhXTBxAIHVcrC80Q8gF6BAgUEAI",
-    "location": "Салон Меблі 'РОДА'",
-    "mail": "igorsveta2005@rambler.ru",
-    "phone": "+38 (053)-59-95-40"
-  },
-  {
-    "city": "Одеса",
-    "adress": "Овидиопольська дорога 7",
-    "adressLink": "https://www.google.com/maps/place/%D0%9E%D0%B2%D0%B8%D0%B4%D0%B8%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F+%D0%B4%D0%BE%D1%80.,+7,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/data=!4m2!3m1!1s0x40c632635e22dd39:0xaae8ce5a5d8ea9c8?sa=X&ved=2ahUKEwim9tWMjcX9AhVdAhAIHUPVDjcQ8gF6BAgiEAI",
-    "location": "ТЦ 6 елемент, Галерея меблів APRIORI",
-    "mail": "igorsveta2005@rambler.ru",
-    "phone": "+38 (048)-701-96-95"
-  },
-  {
-    "city": "Чернівці",
-    "adress": "Вул. Гагаріна, 15",
-    "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D1%96%D0%BD%D0%B0,+15,+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96,+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+58000/data=!4m2!3m1!1s0x4734088343ccc46f:0x5116d2ab89d5bdb6?sa=X&ved=2ahUKEwi8vJW1jcX9AhU8AhAIHZkFAfQQ8gF6BAgUEAI",
-    "location": "Салон меблі 'Континенталь'",
-    "mail": " kontinental.mebel@gmail.com",
-    "phone": "+38 050 134 22 19"
-  },
-  {
-    "city": "Хмельницький",
-    "adress": "Вул. Староміська, 52",
-    "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%BC%D1%96%D1%81%D1%8C%D0%BA%D0%B0,+52%D0%B1,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/data=!4m2!3m1!1s0x473206ff1d300001:0x4228b8788e63643a?sa=X&ved=2ahUKEwjzrYXSjcX9AhXNxIsKHaCtD_8Q8gF6BAgUEAI",
-    "location": "Салон меблів «ЕКМІ-меблі»",
-    "mail": "gonchar@pr.km.ua",
-    "phone": " +38 038 270 13 59"
-  }
-]
+{
+  "mainAdress": [
+    {
+      "street": "С. Петропавлівська Борщагівка",
+      "adressLink": "https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+4,+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D0%BE%D0%B2%D0%BA%D0%B0,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+08130/@50.4313742,30.3607878,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cb9d485df91d:0x444ffb346e9637f2!8m2!3d50.4313742!4d30.3607878!16s%2Fg%2F11jm9jy2qv",
+      "coor": [50.4313742, 30.3607878],
+      "departments": [
+        {
+          "title": "Вул. Велика Окружна 4-В",
+          "phone": "+38(044)502-99-70",
+          "email": "info@ekmi-mebli.com",
+          "viber": "",
+          "workdays": "",
+          "worktime": ""
+        },
+        {
+          "title": "Відділ по роботі з корпоративними клієнтами, постачальниками та експортом",
+          "phone": " +38(050)353-36-68",
+          "email": "sergey_p@ekmi-mebli.com",
+          "viber": "",
+          "workdays": "",
+          "worktime": ""
+        },
+        {
+          "title": "Відділ по роботі з дизайнерами та архітекторами",
+          "phone": "+38(067)956-58-07",
+          "email": "",
+          "viber": "",
+          "workdays": "",
+          "worktime": ""
+        }
+      ]
+    },
+    {
+      "street": "С. Петропавлівська Борщагівка",
+      "adressLink": "https://www.google.com/maps/place/%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D0%BE%D0%B2%D0%BA%D0%B0,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@50.4304428,30.3352476,14z/data=!3m1!4b1!4m6!3m5!1s0x40d4cb6f68fa123b:0xf05847799e2d2c50!8m2!3d50.4336783!4d30.3286144!16s%2Fg%2F121914jf",
+      "coor": [50.4304428, 30.3352476],
+      "departments": [
+        {
+          "title": "Вул. Петропавлівська 6",
+          "phone": "",
+          "email": "",
+          "viber": "",
+          "workdays": "",
+          "worktime": ""
+        },
+        {
+          "title": "Фірмовий салон 'Екмі-Меблі' ТЦ «4ROOM» 2 поверх, секція №338",
+          "phone": "+38(067)-548-32-70",
+          "email": "ekmi.araks@gmail.com",
+          "viber": "+38(067)-956-58-07",
+          "workdays": "",
+          "worktime": ""
+        },
+
+        {
+          "title": "Графік Роботи:",
+          "phone": "",
+          "email": "",
+          "viber": "",
+          "workdays": "Понеділок-Неділя",
+          "worktime": "10:00-20:00"
+        }
+      ]
+    }
+  ],
+  "additional": [
+    {
+      "city": "Вінниця",
+      "adress": "Вул. Келицька 117 Б",
+      "adressLink": "https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9A%D0%B5%D0%BB%D0%B5%D1%86%D0%BA%D0%B0%D1%8F,+117-%D0%91,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/@49.2272409,28.3960271,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5c458ccb2c7f:0xa611b3651de41a5f!8m2!3d49.2272409!4d28.3960271!16s%2Fg%2F11b8v6lmy2",
+      "location": "ТЦ «ПЛАЗА Парк»",
+      "email": "makoviy_marina@mail.ru",
+      "phone": "+38 067 432 14 22",
+      "coor": [49.2272409, 28.3960271]
+    },
+    {
+      "city": "Вінниця",
+      "adress": "Вул. Зодчих, 5",
+      "adressLink": "https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%BE%D0%B4%D1%87%D0%B8%D1%85,+5,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/@49.218548,28.4498624,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5b8673b5d9fb:0x39cf1b3b224774ad!8m2!3d49.218548!4d28.4498624!16s%2Fg%2F11bw3z8j_y",
+      "location": "Меблевий салон «МІА»",
+      "email": "miavinnitsa@gmail.com",
+      "phone": "+38 067 430 81 81",
+      "coor": [49.218548, 28.4498624]
+    },
+    {
+      "city": "Вінниця",
+      "adress": "Вул. Келицька, 81",
+      "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9A%D0%B5%D0%BB%D0%B5%D1%86%D1%8C%D0%BA%D0%B0,+81,+%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F,+%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/data=!4m2!3m1!1s0x472d5c42f3798a4f:0xd1fed3e2a661ceca?sa=X&ved=2ahUKEwikyZOKisX9AhURposKHasPBSQQ8gF6BAgVEAI",
+      "location": "Салон меблі 'Зефір' ",
+      "email": "zefir.vip@gmail.com",
+      "phone": " +38 067 986 10 64",
+      "coor": [49.2256598, 28.4092521]
+    },
+    {
+      "city": "Івано-Франківськ",
+      "adress": "Вул. Стуса, 30 Д",
+      "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8F+%D0%A1%D1%82%D1%83%D1%81%D0%B0,+30,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+76000/data=!4m2!3m1!1s0x4730c181156e77c7:0xe16001b18fdca258?sa=X&ved=2ahUKEwj2rf3EisX9AhURl4sKHXcvAjQQ8gF6BAgTEAI",
+      "location": "Інтер'єр-магазин 'ВІЖЕН' ",
+      "email": "vizhen@ukr.net",
+      "phone": "+38 095 0-500-888",
+      "coor": [48.9332174, 24.7484722]
+    },
+    {
+      "city": "Кременчуг",
+      "adress": "Вул. Першотравнева 57 Б",
+      "adressLink": "https://www.google.com/maps/place/%D0%9F%D0%B5%D1%80%D1%88%D0%BE%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%B2%D0%B0+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F,+57%D0%B1,+%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+39600/data=!4m2!3m1!1s0x40d7533cc75d695b:0xd669b44610927102?sa=X&ved=2ahUKEwjxw-f3isX9AhUXDRAIHUfhBeoQ8gF6BAgcEAI",
+      "location": "Меблевий салон 'ЕЛЕГАНС' ",
+      "email": " mebelelegance@gmail.com",
+      "phone": " +38 053 674 03 12",
+      "coor": [49.067024, 33.4236978]
+    },
+    {
+      "city": "Луцьк",
+      "adress": "Вул. Єршова 11а",
+      "adressLink": "https://www.google.com/maps/place/%D0%9F%D0%B5%D1%80%D1%88%D0%BE%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%B2%D0%B0+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F,+57%D0%B1,+%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+39600/data=!4m2!3m1!1s0x40d7533cc75d695b:0xd669b44610927102?sa=X&ved=2ahUKEwjxw-f3isX9AhUXDRAIHUfhBeoQ8gF6BAgcEAI",
+      "location": "Меблевий салон 'Авіва' ",
+      "email": "avivalutsk@gmail.com",
+      "phone": "+38 050 969 77",
+      "coor": [49.067024, 33.4236978]
+    },
+    {
+      "city": "Львів",
+      "adress": "Вул. Княгині Ольги, 95",
+      "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9A%D0%BD%D1%8F%D0%B3%D0%B8%D0%BD%D1%96+%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8,+95,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/data=!4m2!3m1!1s0x473ae7b9609c27a7:0x69a5ad554ff0bf51?sa=X&ved=2ahUKEwj786bei8X9AhWR_CoKHdVWB_MQ8gF6BAgNEAI",
+      "location": "ТЦ «MARK» 1 поверх, секція №113.",
+      "email": "ekmilviv@ukr.net",
+      "phone": "+38 097 093 96 79",
+      "coor": [49.8016133, 24.0007067]
+    },
+    {
+      "city": "Миколаїв",
+      "adress": "пр. Жовтневий 234 Б",
+      "adressLink": "https://www.google.com/maps/place/%D0%91%D0%BE%D0%B3%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+234%D0%91,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+54000/data=!4m2!3m1!1s0x40c5ccbfab5e337b:0xc81550a647cf8423?sa=X&ved=2ahUKEwjOhOKVjMX9AhWUy4sKHZgtD6YQ8gF6BAgYEAI",
+      "location": "ТЦ «Мій Дім», салон мебелі «Европа»",
+      "email": " grand2004@hotbox.ru",
+      "phone": "+38 050 493 58 24",
+      "coor": [46.9038821, 32.0394802]
+    },
+    {
+      "city": "Полтава",
+      "adress": "Вул. Європейська, 107",
+      "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%84%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B0,+107,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+36000/data=!4m2!3m1!1s0x40d82f41a839e173:0x23152bfc26237ba6?sa=X&ved=2ahUKEwiMk-_TjMX9AhXTBxAIHVcrC80Q8gF6BAgUEAI",
+      "location": "Салон Меблі 'РОДА'",
+      "email": "igorsveta2005@rambler.ru",
+      "phone": "+38 (053)-59-95-40",
+      "coor": [49.5742854, 34.5376499]
+    },
+    {
+      "city": "Одеса",
+      "adress": "Овидиопольська дорога 7",
+      "adressLink": "https://www.google.com/maps/place/%D0%9E%D0%B2%D0%B8%D0%B4%D0%B8%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F+%D0%B4%D0%BE%D1%80.,+7,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/data=!4m2!3m1!1s0x40c632635e22dd39:0xaae8ce5a5d8ea9c8?sa=X&ved=2ahUKEwim9tWMjcX9AhVdAhAIHUPVDjcQ8gF6BAgiEAI",
+      "location": "ТЦ 6 елемент, Галерея меблів APRIORI",
+      "email": "igorsveta2005@rambler.ru",
+      "phone": "+38 (048)-701-96-95",
+      "coor": [46.4490544, 30.6632132]
+    },
+    {
+      "city": "Чернівці",
+      "adress": "Вул. Гагаріна, 15",
+      "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D1%96%D0%BD%D0%B0,+15,+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96,+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+58000/data=!4m2!3m1!1s0x4734088343ccc46f:0x5116d2ab89d5bdb6?sa=X&ved=2ahUKEwi8vJW1jcX9AhU8AhAIHZkFAfQQ8gF6BAgUEAI",
+      "location": "Салон меблі 'Континенталь'",
+      "email": " kontinental.mebel@gmail.com",
+      "phone": "+38 050 134 22 19",
+      "coor": [48.2989359, 25.9343305]
+    },
+    {
+      "city": "Хмельницький",
+      "adress": "Вул. Староміська, 52",
+      "adressLink": "https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%BC%D1%96%D1%81%D1%8C%D0%BA%D0%B0,+52%D0%B1,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/data=!4m2!3m1!1s0x473206ff1d300001:0x4228b8788e63643a?sa=X&ved=2ahUKEwjzrYXSjcX9AhXNxIsKHaCtD_8Q8gF6BAgUEAI",
+      "location": "Салон меблів «ЕКМІ-меблі»",
+      "email": "gonchar@pr.km.ua",
+      "phone": " +38 038 270 13 59",
+      "coor": [49.4287937, 26.9876308]
+    }
+  ]
+}

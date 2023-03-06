@@ -9,7 +9,8 @@ import Slider from "react-slick";
 
 import ProdList from "../../data/products.json";
 
-function SwipeGallery() {
+function SwipeGallery(props) {
+  const { className } = props;
   const params = {
     rows: 2,
     dots: false,
@@ -19,9 +20,11 @@ function SwipeGallery() {
     slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 1700,
   };
   return (
-    <section id="slideGallery">
+    <section id="slideGallery" className={className}>
       <div className="container">
         <Slider {...params}>
           {ProdList.map((item, index) => {

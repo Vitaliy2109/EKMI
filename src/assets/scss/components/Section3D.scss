@@ -11,13 +11,7 @@
         width: 732px;
         height: 380px;
         position: relative;
-        &:after {
-          content: url(../../images/section3D/360-icon.svg);
-          position: absolute;
-          bottom: 0;
-          width: 40px;
-          height: 0px;
-        }
+
         cursor: grab;
         &:active {
           cursor: grabbing;

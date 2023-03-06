@@ -2,7 +2,7 @@ import Sofa from "./Sofa";
 import "../../assets/scss/components/Section3D.scss";
 import Button from "../common/Button";
 import { Link } from "react-router-dom";
-import icon360 from "../../assets/images/section3D/360-icon.svg";
+import icon360 from "../../assets/images/section3D/360-icon.jpg";
 
 function Section3D() {
   return (

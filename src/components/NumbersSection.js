@@ -1,6 +1,7 @@
 import "../assets/scss/components/NumbersSection.scss";
 
-function NumbersSection() {
+function NumbersSection(props) {
+  const { title = "", className = "" } = props;
   const items = [
     {
       number: 1,
@@ -16,8 +17,9 @@ function NumbersSection() {
     },
   ];
   return (
-    <section id="numbers-section">
+    <section id="numbers-section" className={className}>
       <div className="container">
+        <h2 className="title">{title}</h2>
         <ul className="list">
           {items.map((item, index) => {
             return (

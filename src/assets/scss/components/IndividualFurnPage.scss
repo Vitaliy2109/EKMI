@@ -182,9 +182,16 @@
   }
 }
 #sectionForm1 {
-  background: url(../../images/IndividualFurniture/sectionForm1/bg-image.jpg)
-    no-repeat;
-  background-size: cover;
+  position: relative;
+  .react-parallax {
+    height: 100%;
+  }
+
+  .parallax-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    font-size: 24px;
+  }
   margin-bottom: 160px;
   .container {
     padding: 44px 0;

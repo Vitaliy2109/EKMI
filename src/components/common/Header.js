@@ -27,13 +27,10 @@ function Header() {
         </div>
         <div className="about">
           <Link to="/Show-Room">Шоу рум</Link>
+          <Link to="/Models3D">2D, 3D Моделі</Link>
           <a href="tel:+38099-638-45-37" className="tel">
             +38 (099)-638-45-37
           </a>
-          <div className="accordion">
-            <button type="button">En</button>
-            <button type="button">Ua</button>
-          </div>
         </div>
       </div>
     </header>

@@ -1,7 +1,12 @@
 import "../assets/scss/components/TechnicalInfo.scss";
+
 import TechInfo from "../data/TechInfo.json";
 import Button from "./common/Button";
 function TechnicalInformation() {
+  const handleDownload = () => {
+    window.open("./PDF/TechInfo.pdf", "_blank");
+  };
+
   return (
     <section id="technical-info">
       <div className="container">
@@ -16,7 +21,8 @@ function TechnicalInformation() {
             ))}
           </ul>
         </div>
-        <Button text="Завантажити характеристику" />
+
+        <Button text="Завантажити характеристику" onClick={handleDownload} />
       </div>
     </section>
   );
