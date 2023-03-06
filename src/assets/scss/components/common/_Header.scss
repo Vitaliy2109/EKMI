@@ -1,0 +1,32 @@
+#header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(9px);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: #343434;
+    }
+    .list,
+    .about {
+      display: flex;
+      gap: 62px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .logo-wrap {
+      width: 216px;
+    }
+    .about .tel {
+      font-family: "Open Sans";
+    }
+  }
+}

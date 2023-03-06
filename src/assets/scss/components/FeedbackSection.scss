@@ -1,0 +1,17 @@
+#feedback-section {
+  background-color: #a9c2be;
+  margin-bottom: 160px;
+
+  .container {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+    .img-wrap {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 57%;
+    }
+  }
+}

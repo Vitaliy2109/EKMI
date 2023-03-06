@@ -1,0 +1,34 @@
+#latest-publications {
+  margin-bottom: 160px;
+  .container {
+    .title {
+      margin-bottom: 80px;
+    }
+    .slick-slider {
+      .slick-slide:not(.slick-center) {
+        padding: 0 3px;
+      }
+      .slick-arrow {
+        &.slick-prev {
+          left: -45px;
+
+          &:before {
+            left: 14px;
+          }
+        }
+        &.slick-next {
+          right: -42px;
+          &:before {
+            left: -17px;
+          }
+        }
+      }
+      .img-wrap {
+        margin-bottom: 15px;
+      }
+      .item-name {
+        text-align: center;
+      }
+    }
+  }
+}

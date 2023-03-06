@@ -1,0 +1,77 @@
+#individual-furniture {
+  position: relative;
+  margin-bottom: 192px;
+
+  .background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(50% + 85px);
+    height: calc(100% - 63px);
+    z-index: -1;
+  }
+  .background-color {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(70%);
+    height: 100%;
+    background-color: #5b5b5b;
+    z-index: -2;
+  }
+  padding: 31px 0 22px;
+  .container {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 70px;
+    &:after {
+      content: "furniture";
+      font-size: 15px;
+      font-weight: 400;
+      padding: 50px 49px 22px 11px;
+      line-height: 18.75px;
+      background-color: #ff9619;
+      color: #fff;
+      letter-spacing: 0.245em;
+      position: absolute;
+      right: -49px;
+      top: -67px;
+    }
+    .img-wrap {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: #ff9619;
+        bottom: -54px;
+        left: 100px;
+        z-index: -1;
+      }
+    }
+    .info-wrap {
+      display: flex;
+      flex-direction: column;
+      max-width: 374px;
+      h2.title {
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      p.subtitle {
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+      p.info {
+        font-weight: 300;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      .btn {
+        padding: 13px 23px;
+      }
+    }
+  }
+}

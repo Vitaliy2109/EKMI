@@ -1,0 +1,51 @@
+#our-history {
+  margin-bottom: 160px;
+  .container {
+    .title {
+      margin-bottom: 14px;
+    }
+    .info-top {
+      display: flex;
+      justify-content: end;
+      position: relative;
+      margin-bottom: 80px;
+      .text-block {
+        padding: 50px 42px;
+        background-color: #5b5b5b;
+        max-width: 538px;
+        position: absolute;
+        left: 0;
+        top: 66px;
+        .title {
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 0.1em;
+          margin-bottom: 25px;
+          color: #ffffff;
+        }
+        .subtitle {
+          font-size: 18px;
+          font-weight: 300;
+          letter-spacing: 0.1em;
+          color: #ffffff;
+        }
+      }
+    }
+    .year {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .small {
+        color: #343434;
+        font-size: 25px;
+        font-weight: 300;
+      }
+      .big {
+        font-size: 144px;
+        font-weight: 600;
+        color: #5a5a5a;
+        opacity: 0.1;
+      }
+    }
+  }
+}

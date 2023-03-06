@@ -1,0 +1,141 @@
+#footer {
+  background-color: #5b5b5b;
+  width: 100%;
+  padding: 80px 0 29px;
+  margin-top: 96px;
+  .container {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:before {
+      content: "ekmi";
+      position: absolute;
+      right: -45px;
+      top: -175px;
+      font-size: 130px;
+      font-weight: 800;
+      line-height: 98px;
+      letter-spacing: 0.13em;
+      color: #5b5b5b;
+    }
+    .logo {
+      max-width: 170px;
+      max-height: 56px;
+      a {
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 160px;
+      .list__item {
+        a {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.16em;
+          color: #ffffff;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            left: 0;
+            bottom: -25%;
+            background-color: #ffffff;
+            transition: all 0.2s ease;
+            z-index: 0;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          &.phone {
+            font-family: "Open Sans";
+            letter-spacing: 0em;
+          }
+        }
+        &.icons {
+          display: flex;
+          gap: 15px;
+
+          a {
+            padding: 5px 0;
+            border: 1px solid #fff;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            &:hover.instagram {
+              background: linear-gradient(
+                45deg,
+                rgba(253, 182, 80, 1) 36%,
+                rgba(188, 51, 139, 1) 63%,
+                rgba(163, 54, 182, 1) 80%
+              );
+            }
+            &:hover.facebook {
+              background-color: #38529a;
+            }
+            &:hover {
+              transform: scale(1.3);
+              border: transparent;
+              &:after {
+                display: none;
+              }
+            }
+            img {
+              object-fit: contain;
+            }
+          }
+        }
+        .btn {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          overflow: hidden;
+          .arrow {
+            width: 15px;
+            height: 2px;
+            background-color: #ffffff;
+            position: relative;
+            transition: all 1s ease;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border-right: 2px solid #fff;
+              border-bottom: 2px solid #fff;
+              right: 1px;
+              top: -4px;
+              transform: rotate(-45deg);
+            }
+          }
+
+          &:hover .arrow {
+            transform: translateX(400%);
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.16em;
+    color: #fff;
+  }
+}

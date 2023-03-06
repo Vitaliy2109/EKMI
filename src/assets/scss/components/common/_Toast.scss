@@ -1,0 +1,115 @@
+@keyframes animate {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.toast {
+  position: fixed;
+  z-index: 999;
+  top: 119px;
+  right: 3%;
+  height: 50px;
+  padding-right: 10px;
+  background-color: #464646;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+  color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(-350%);
+  transition: all 0.6s ease;
+  &.active {
+    transform: translateY(0);
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #464646;
+    height: 5px;
+    width: 100%;
+    right: 0;
+    top: -5px;
+    animation: animate 6s;
+  }
+  &.success {
+    border-top: 5px solid green;
+    .statusText {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 400;
+      position: relative;
+      padding-left: 40px;
+      color: greenyellow;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        width: 20px;
+        height: 9px;
+        border-bottom: 2px solid greenyellow;
+        border-left: 2px solid greenyellow;
+        transform: rotate(-53deg);
+      }
+    }
+  }
+  &.error {
+    border-top: 5px solid #e75252;
+    .statusText {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 400;
+      position: relative;
+      padding-left: 40px;
+      color: #e75252;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 20px;
+        height: 2px;
+        background-color: #e75252;
+        border: transparent;
+      }
+      &:before {
+        transform: rotate(-47deg);
+      }
+      &:after {
+        transform: rotate(47deg);
+      }
+    }
+  }
+
+  .closeBtn {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:after,
+    &:before {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      left: -3px;
+    }
+    &:before {
+      transform: rotate(45deg);
+      left: -3px;
+    }
+  }
+}

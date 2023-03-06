@@ -1,0 +1,307 @@
+#fullCycleSection {
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 311px;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+  }
+  &:before {
+    height: 329px;
+    top: 38px;
+    left: 0;
+    background-color: #a9c2be;
+    z-index: -1;
+  }
+  &:after {
+    height: 535px;
+    top: 0;
+    right: 0;
+    background-color: #5b5b5b;
+    z-index: -1;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .textInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      h2.title {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+      }
+      p.text {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: #fff;
+        max-width: 381px;
+      }
+    }
+    .img-wrap {
+      position: relative;
+      &:after {
+        content: "furniture";
+        position: absolute;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.245em;
+        line-height: 19px;
+        padding: 57px 49px 15px 11px;
+        background-color: #ff9619;
+        right: -35px;
+        top: -55px;
+      }
+    }
+  }
+}
+#brandSection {
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 194px;
+
+  .top {
+    width: 100%;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 56%;
+      height: 100%;
+      right: 0;
+      background-color: #5b5b5b;
+    }
+    .container {
+      padding: 42px 0;
+      display: flex;
+      gap: 61px;
+      position: relative;
+
+      &:after {
+        content: "brand";
+        position: absolute;
+        font-size: 129px;
+        font-weight: 800;
+        line-height: 144px;
+        right: -62px;
+        top: -117px;
+        color: #5b5b5b;
+      }
+      .img-wrap {
+        position: relative;
+        top: -94px;
+        img {
+          width: 670px;
+          height: 448px;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: calc(100% + 12px);
+          height: calc(100% + 1px);
+          background: transparent;
+          border: 5px solid #ccb2a3;
+          top: 23px;
+          left: 40px;
+          z-index: -2;
+        }
+      }
+      .text-wrap {
+        max-width: 439px;
+        h3.title {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 27px;
+          color: #ffffff;
+          letter-spacing: 0.05em;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 24px;
+          letter-spacing: 0.1em;
+          color: #ffffff;
+        }
+        .top {
+          margin-bottom: 30px;
+        }
+        .center {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .bottom {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(45% + 10px);
+      right: 0;
+      top: -34px;
+      background-color: #a9c2be;
+      height: 301px;
+      z-index: -1;
+    }
+    .container {
+      display: flex;
+      gap: 70px;
+      align-items: center;
+
+      .text-info {
+        max-width: 400px;
+        .title {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 27px;
+          letter-spacing: 0.05em;
+          color: #343434;
+          margin-bottom: 25px;
+        }
+        .info {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 24px;
+          letter-spacing: 0.1em;
+          color: #343434;
+        }
+      }
+    }
+  }
+}
+#sectionForm1 {
+  background: url(../../images/IndividualFurniture/sectionForm1/bg-image.jpg)
+    no-repeat;
+  background-size: cover;
+  margin-bottom: 160px;
+  .container {
+    padding: 44px 0;
+    display: flex;
+    justify-content: end;
+    .form-wrap {
+      &::before {
+        display: none;
+      }
+      h2.title::first-letter {
+        color: #343434;
+      }
+    }
+  }
+}
+
+#howItWorkSection {
+  margin-bottom: 160px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #5b5b5b;
+    z-index: -1;
+  }
+  .container {
+    padding: 166px 0;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 77px;
+      height: 83px;
+      background-color: #ff9619;
+      right: -10px;
+      top: -55px;
+    }
+    .info-wrap {
+      max-width: 460px;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.07em;
+      color: #ffffff;
+      .title {
+        margin-bottom: 25px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+  position: relative;
+  background: url(../../images/IndividualFurniture/HowItWorkSection/bg.png) left
+    center no-repeat;
+  background-size: 50%;
+}
+
+#reasons {
+  margin-bottom: 160px;
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .info-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      &:nth-child(1) {
+        margin-bottom: 189px;
+      }
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+        margin-bottom: 80px;
+        .title {
+          top: -103px;
+          left: 0;
+        }
+      }
+      .title {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 45px;
+        letter-spacing: 0.05em;
+        color: #343434;
+        position: relative;
+        align-self: start;
+        position: absolute;
+        &::first-letter {
+          font-weight: 700;
+          color: #fff;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 59px;
+          height: 58px;
+          background-color: #ff9619;
+          z-index: -1;
+          left: -35px;
+          top: -6px;
+        }
+      }
+
+      p.text {
+        max-width: 535px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.07em;
+        color: #343434;
+      }
+    }
+  }
+}

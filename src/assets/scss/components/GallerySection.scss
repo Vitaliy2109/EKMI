@@ -1,0 +1,75 @@
+#gallerySection {
+  margin-bottom: 160px;
+  .container {
+    .lg-react-element {
+      display: flex;
+      gap: 30px;
+
+      .item {
+        max-width: 270px;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: calc(100%);
+          width: 100%;
+          background-color: rgba(255, 150, 25, 0.5);
+          backdrop-filter: blur(4px);
+          transform: translateY(-100%);
+          transition: all 0.3s ease;
+        }
+        &:hover:before {
+          transform: translate(0);
+        }
+        &:hover i {
+          transform: translateY(-70%) translatex(-50%);
+        }
+        i {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translatex(-50%) translateY(-350%);
+          font-size: 55px;
+          color: #fff;
+          transition: all 0.5s ease;
+          // transition-delay: 0.2s;
+        }
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../../fonts/Icons-Font/icomoon.eot?qdhska");
+  src: url("../../fonts/Icons-Font/icomoon.eot?qdhska#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/Icons-Font/icomoon.ttf?qdhska") format("truetype"),
+    url("../../fonts/Icons-Font/icomoon.woff?qdhska") format("woff"),
+    url("../../fonts/Icons-Font/icomoon.svg?qdhska#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zoom-in:before {
+  content: "\e900";
+}

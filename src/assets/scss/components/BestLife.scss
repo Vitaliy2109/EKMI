@@ -1,0 +1,69 @@
+#bestLife {
+  position: relative;
+  margin-bottom: 192px;
+  .background-color {
+    position: absolute;
+    width: 100%;
+    height: 590px;
+    left: 0;
+    top: 0;
+    background-color: #ccb2a3;
+    z-index: -1;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    .left-info {
+      max-width: 270px;
+
+      h1.title {
+        font-size: 42px;
+        margin-bottom: 60px;
+      }
+      .btn {
+        &:hover {
+          border: 1px solid #343434;
+          background-color: #343434;
+
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.137),
+            0 0 20px rgba(255, 255, 255, 0.034);
+          outline-color: rgba(255, 255, 255, 0);
+          outline-offset: 20px;
+        }
+      }
+    }
+    .right-info {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 35px;
+      .since {
+        font-weight: 400;
+        font-size: 20px;
+        color: #ffffff;
+      }
+      .swiper {
+        width: 870px;
+        height: 617px;
+        overflow: visible;
+        .swiper-pagination {
+          bottom: -35px;
+          .swiper-pagination-bullet {
+            &.swiper-pagination-bullet-active {
+              background-color: #ff9619;
+            }
+            width: 13px;
+            height: 13px;
+            left: 5px;
+            top: 5px;
+            background-color: #c5c5c5;
+            color: transparent;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

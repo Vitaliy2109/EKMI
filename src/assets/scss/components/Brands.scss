@@ -1,0 +1,12 @@
+#brands {
+  margin-bottom: 160px;
+  .container {
+    display: flex;
+    gap: 83px;
+    .item {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}

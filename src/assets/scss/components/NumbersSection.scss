@@ -1,0 +1,41 @@
+#numbers-section {
+  margin-bottom: 160px;
+  .container {
+    .list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 37px;
+      .list__item {
+        position: relative;
+        .number {
+          font-family: "Poppins";
+          font-size: 176px;
+          font-weight: 700;
+          color: #5a5a5a;
+          opacity: 0.1;
+          position: absolute;
+          top: -27px;
+          line-height: 154px;
+          z-index: -1;
+          &.number-1 {
+            left: -39px;
+          }
+          &.number-2 {
+            left: -77px;
+          }
+          &.number-3 {
+            left: -83px;
+          }
+        }
+        p.info {
+          max-width: 279px;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.05em;
+          color: #343434;
+        }
+      }
+    }
+  }
+}
