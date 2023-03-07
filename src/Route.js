@@ -6,6 +6,7 @@ import Catalog from "./pages/Catalog";
 import IndividFurnPage from "./pages/IndividFurnPage";
 import Contacts from "./pages/Contacts";
 import ShowRoom from "./pages/ShowRoom";
+import { Dealers } from "./pages/Dealers";
 // import NotFound from "./pages/NotFound";
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "Show-Room",
         element: <ShowRoom />,
+      },
+      {
+        path: "Dealers",
+        element: <Dealers />,
       },
     ],
   },

@@ -14,4 +14,32 @@
       width: 57%;
     }
   }
+  &.deallers {
+    background-color: #5b5b5b;
+    position: relative;
+    &::before {
+      content: "";
+      background: url(../../images/FeedbackSection/image-1.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      width: 58%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .container {
+      .img-wrap {
+        display: none;
+      }
+      .form-wrap {
+        &::before {
+          left: -50px;
+          border-right: 25px solid transparent;
+        }
+        .title::first-letter {
+          color: #343434;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,79 @@
+h2.title.deallers {
+  margin-bottom: 80px;
+}
+#ShowRoomsSmallList {
+  margin-bottom: 180px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    h2.title {
+      align-self: start;
+    }
+    .small-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      row-gap: 80px;
+      .item-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 71px 0;
+        .background {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          z-index: -1;
+        }
+        .text-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .city {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 29px;
+            color: #ff9619;
+            text-align: left;
+            margin-bottom: 10px;
+          }
+          .item {
+            display: flex;
+            color: #fff;
+            align-items: center;
+            gap: 10px;
+            a {
+              color: #fff;
+              position: relative;
+              &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                bottom: -2px;
+                left: 0;
+                height: 1px;
+                background: #fff;
+                transform: scale(0);
+                transition: all 0.2s ease;
+              }
+              &:hover:after {
+                transform: scale(1);
+              }
+            }
+            .title {
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

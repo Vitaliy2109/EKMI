@@ -1,7 +1,7 @@
 import { MapSection } from "../components/MapSection";
 import NumbersSection from "../components/NumbersSection";
 import SwipeGallery from "../components/SwipeGallery/SwipeGallery";
-import ContactsSection from "../components/ContactsSection";
+import ContactsSection from "../components/ContactsList/ContactsSection";
 import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
 function ShowRoom() {
   return (

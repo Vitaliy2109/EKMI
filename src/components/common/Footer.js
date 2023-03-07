@@ -41,7 +41,7 @@ function Footer() {
             <Link to="/Show-Room">Шоу-Рум</Link>
           </li>
           <li className="list__item">
-            <a href="#">Постачальникам</a>
+            <Link to="/Dealers">Постачальникам</Link>
           </li>
           <li className="list__item">
             <Link to="/Contacts">Контакти</Link>

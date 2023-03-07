@@ -1,6 +1,7 @@
-import "../assets/scss/components/ContactsSection.scss";
-import Background from "../assets/images/ContactsSection/background.png";
-import ContactsList from "../data/ContactsList.json";
+import "../../assets/scss/components/ContactsSection.scss";
+import Background from "../../assets/images/ContactsSection/background.png";
+import ContactsList from "../../data/ContactsList.json";
+import ContactsItem from "./ContactsItem";
 function ContactsSection() {
   return (
     <section id="contactsSection">
@@ -86,31 +87,14 @@ function ContactsSection() {
         <div className="small-list">
           {ContactsList.additional.map((el) => {
             return (
-              <div className="item-wrap">
-                <img src={Background} className="background" alt="" />
-                <div className="text-wrap">
-                  <h3 className="city">{el.city}</h3>
-                  <div className="item">
-                    <p className="title">Адреса: </p>
-                    <a href={el.adressLink} target="_blank">
-                      {el.adress}{" "}
-                    </a>
-                  </div>
-                  <div className="item">
-                    <p className="title">{el.location}</p>
-                  </div>
-                  <div className="item">
-                    <p className="title">Пошта: </p>
-                    <a className="mail" href={`mailto:${el.email}`}>
-                      {el.email}
-                    </a>
-                  </div>
-                  <div className="item">
-                    <p className="title">Телефон:</p>
-                    <a href={`tel:${el.phone}`}>{el.phone}</a>
-                  </div>
-                </div>
-              </div>
+              <ContactsItem
+                city={el.city}
+                adressLink={el.adressLink}
+                adress={el.adress}
+                location={el.location}
+                email={el.email}
+                phone={el.phone}
+              />
             );
           })}
         </div>
