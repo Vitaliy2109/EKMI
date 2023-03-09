@@ -1,4 +1,10 @@
 import "../../assets/scss/components/Reasons.scss";
+import "lightgallery/scss/lightgallery.scss";
+import "lightgallery/scss/lg-zoom.scss";
+import "lightgallery/scss/lg-thumbnail.scss";
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 function Reasons(props) {
   const {
     info = [
@@ -32,7 +38,15 @@ function Reasons(props) {
                 <p className="text">{el.text}</p>
               </div>
               <div className="img-wrap">
-                <img src={`./images/Reasons/${el.image}`} alt="" />
+                <LightGallery
+                  plugins={[lgThumbnail, lgZoom]}
+                  thumbWidth={100}
+                  actualSize={false}
+                >
+                  <a href={`./images/Reasons/${el.image}`}>
+                    <img src={`./images/Reasons/${el.image}`} alt="" />
+                  </a>
+                </LightGallery>
               </div>
             </div>
           );

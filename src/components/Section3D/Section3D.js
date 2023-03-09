@@ -3,15 +3,26 @@ import "../../assets/scss/components/Section3D.scss";
 import Button from "../common/Button";
 import { Link } from "react-router-dom";
 import icon360 from "../../assets/images/section3D/360-icon.jpg";
-
+import { useState } from "react";
 function Section3D() {
+  const [classBig, setClassBig] = useState(false);
+  const changeClass = () => {
+    setClassBig(!classBig);
+  };
   return (
-    <section id="section3D">
+    <section id="section3D" className={`${classBig ? "big" : ""}`}>
       <div className="container">
         <div className="left-info">
-          <Sofa />
-          <div className="icon-wrap">
-            <img src={icon360} alt="" />
+          <div className="sofa-wrap">
+            <Sofa />
+            <button
+              type="button"
+              className="changeClassbtn"
+              onClick={changeClass}
+            ></button>
+            <div className="icon-wrap">
+              <img src={icon360} alt="" />
+            </div>
           </div>
         </div>
 

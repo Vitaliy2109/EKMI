@@ -32,10 +32,6 @@
         display: none;
       }
       .form-wrap {
-        &::before {
-          left: -50px;
-          border-right: 25px solid transparent;
-        }
         .title::first-letter {
           color: #343434;
         }

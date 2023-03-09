@@ -1,13 +1,18 @@
 import image1 from "../../assets/images/IndividualFurniture/BrandSection/image-1.png";
 import image2 from "../../assets/images/IndividualFurniture/BrandSection/image-2.png";
+import "atropos/css";
+import Atropos from "atropos/react";
 function BrandSection() {
   return (
     <section id="brandSection">
       <div className="top">
         <div className="container">
           <div className="img-wrap">
-            <img src={image1} alt="" />
+            <Atropos activeOffset={20} shadowScale={1}>
+              <img src={image1} alt="" />
+            </Atropos>
           </div>
+
           <div className="text-wrap">
             <h3 className="title">Напрацювання довжиною 25 років</h3>
             <p className="text top">
@@ -39,7 +44,9 @@ function BrandSection() {
             </p>
           </div>
           <div className="img-wrap">
-            <img src={image2} alt="" />
+            <Atropos activeOffset={20} shadowScale={1}>
+              <img src={image2} alt="" />
+            </Atropos>
           </div>
         </div>
       </div>

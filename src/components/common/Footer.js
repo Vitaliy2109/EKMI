@@ -1,73 +1,101 @@
 import "../../assets/scss/components/common/_Footer.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+
 import logo from "../../assets/images/footer/logo.svg";
 import instagramIcon from "../../assets/images/footer/icon-instagram.svg";
 import facebookIcon from "../../assets/images/footer/icon-facebook.svg";
 import Modal from "./Modal";
+import ScrollToTop from "../common/ScrollToTop";
 function Footer() {
   const [showModal, setShowModal] = useState(false);
-
+  const { pathname } = useLocation();
   const toggleModal = () => {
     setShowModal(!showModal);
   };
+  const clickHandler = (e) => {
+    if (pathname === e.target.getAttribute("href")) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer id="footer">
       <div className="container">
         <div className="logo">
-          <Link to={"/"}>
+          <Link to={"/"} onClick={clickHandler}>
             <img src={logo} alt="" />
           </Link>
         </div>
-        <ul className="list">
-          <li className="list__item">
-            <Link to="/Catalog">Каталог</Link>
-          </li>
-          <li className="list__item">
-            <Link to="/">Про компанію</Link>
-          </li>
-          <li className="list__item">
-            <Link to="/Individual-Furniture">Індивідуальні меблі</Link>
-          </li>
-          <li className="list__item">
-            <a href="#">Партнерам Дизайнерам</a>
-          </li>
-        </ul>
-        <ul className="list">
-          <li className="list__item">
-            <Link to={"/Models3D"}>2D, 3D Моделі</Link>
-          </li>
-          <li className="list__item">
-            <Link to="/Show-Room">Шоу-Рум</Link>
-          </li>
-          <li className="list__item">
-            <Link to="/Dealers">Постачальникам</Link>
-          </li>
-          <li className="list__item">
-            <Link to="/Contacts">Контакти</Link>
-          </li>
-        </ul>
-        <div className="list">
-          <div className="list__item icons">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              className="instagram"
-            >
-              <img src={instagramIcon} alt="" />
-            </a>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              className="facebook"
-            >
-              <img src={facebookIcon} alt="" />
-            </a>
-          </div>
-          <div className="list__item">
-            <a href="tel:+38099-638-45-37" className="phone">
-              +38 (099)-638-45-37
-            </a>
+        <div className="text-info">
+          <ul className="list">
+            <li className="list__item">
+              <Link to="/Catalog" onClick={clickHandler}>
+                Каталог
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/" onClick={clickHandler}>
+                Про компанію
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/Individual-Furniture" onClick={clickHandler}>
+                Індивідуальні меблі
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/Partners" onClick={clickHandler}>
+                Партнерам Дизайнерам
+              </Link>
+            </li>
+          </ul>
+          <ul className="list">
+            <li className="list__item">
+              <Link to={"/Models3D"} onClick={clickHandler}>
+                2D, 3D Моделі
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/Show-Room" onClick={clickHandler}>
+                Шоу-Рум
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/Dealers" onClick={clickHandler}>
+                Постачальникам
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/Contacts" onClick={clickHandler}>
+                Контакти
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="list socials-list">
+          <div className="socials">
+            <div className="list__item icons">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                className="instagram"
+              >
+                <img src={instagramIcon} alt="" />
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                className="facebook"
+              >
+                <img src={facebookIcon} alt="" />
+              </a>
+            </div>
+            <div className="list__item">
+              <a href="tel:+38099-638-45-37" className="phone">
+                +38 (099)-638-45-37
+              </a>
+            </div>
           </div>
           <div className="list__item">
             <button className="btn" onClick={toggleModal}>

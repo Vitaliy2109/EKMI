@@ -20,6 +20,17 @@
           left: 0;
         }
       }
+      &:hover {
+        .title {
+          color: #fff;
+          &:before {
+            width: calc(100% + 65px);
+          }
+        }
+        .img-wrap {
+          transform: scale(1.1);
+        }
+      }
       .title {
         font-size: 35px;
         font-weight: 500;
@@ -29,6 +40,7 @@
         position: relative;
         align-self: start;
         position: absolute;
+        transition: all 0.7s ease;
         &::first-letter {
           font-weight: 700;
           color: #fff;
@@ -42,6 +54,7 @@
           z-index: -1;
           left: -35px;
           top: -6px;
+          transition: all 0.5s ease;
         }
       }
 
@@ -53,6 +66,9 @@
         letter-spacing: 0.07em;
         color: #343434;
       }
+      .img-wrap {
+        transition: all 0.5s ease;
+      }
     }
   }
   &.deallers {
@@ -62,6 +78,13 @@
       justify-content: space-between;
       align-items: center;
       position: relative;
+      &:hover {
+        &:nth-child(2) {
+          .img-wrap {
+            transform: scaleX(-1) scale(1.1);
+          }
+        }
+      }
       .img-wrap {
         position: relative;
         &:after {

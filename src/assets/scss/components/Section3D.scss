@@ -1,28 +1,78 @@
 #section3D {
   margin-bottom: 120px;
+
   .container {
     display: flex;
     justify-content: space-between;
+
     .left-info {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .sofa {
+
+      .sofa-wrap {
         width: 732px;
         height: 380px;
         position: relative;
-
         cursor: grab;
         &:active {
           cursor: grabbing;
         }
+        .sofa {
+          width: 100%;
+          height: 100%;
+        }
       }
       .icon-wrap {
         width: 80px;
-        position: relative;
-        left: 60px;
+        position: absolute;
+        user-select: none;
+        left: 0;
+        top: 0;
         img {
           object-fit: contain;
+        }
+      }
+      .changeClassbtn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 45px;
+        height: 35px;
+        background: transparent;
+        border: none;
+        &:before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          top: 7px;
+          left: 3px;
+          position: absolute;
+          border-bottom: 1px solid #343434;
+          border-left: 1px solid #343434;
+          transform: rotate(45deg);
+          transition: all 0.2s ease;
+        }
+        &:after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          top: 7px;
+          right: 3px;
+          position: absolute;
+          border-bottom: 1px solid #343434;
+          border-right: 1px solid #343434;
+          transition: all 0.2s ease;
+          transform: rotate(-45deg);
+        }
+        &:hover {
+          transform: scale(1.2);
+        }
+        &:hover:before {
+          left: 0;
+        }
+        &:hover:after {
+          right: 0;
         }
       }
     }
@@ -53,6 +103,40 @@
         font-weight: 600;
         margin-bottom: 30px;
         text-transform: uppercase;
+      }
+    }
+  }
+  &.big {
+    .container {
+      flex-direction: column;
+      .left-info {
+        .sofa-wrap {
+          width: 100%;
+          .sofa {
+            width: 100% !important;
+            height: 450px !important;
+          }
+          .changeClassbtn {
+            &:before {
+              transform: rotate(-135deg);
+              left: -3px;
+            }
+            &:after {
+              transform: rotate(135deg);
+              right: -3px;
+            }
+            &:hover:before {
+              left: 1px;
+            }
+            &:hover:after {
+              right: 1px;
+            }
+          }
+        }
+      }
+      .text-info {
+        max-width: none;
+        text-align: center;
       }
     }
   }

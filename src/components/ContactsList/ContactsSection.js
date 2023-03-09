@@ -23,7 +23,7 @@ function ContactsSection() {
                       <li className="list__item">
                         <h3 className="title">
                           {index === 0 ? (
-                            <div>
+                            <div key={index}>
                               Адреса:
                               <a
                                 href={el.adressLink}
@@ -40,7 +40,7 @@ function ContactsSection() {
                         </h3>
                         <ul className="info-list">
                           {depart.phone ? (
-                            <li className="infolist__item">
+                            <li className="infolist__item" key={index}>
                               Тел.:
                               <a href={`tel:${depart.phone}`}>
                                 {" "}
@@ -51,7 +51,7 @@ function ContactsSection() {
                             ""
                           )}
                           {depart.viber ? (
-                            <li className="infolist__item">
+                            <li className="infolist__item" key={index}>
                               Тел.:
                               <a href={`tel:${depart.viber}`}>
                                 {" "}
@@ -63,7 +63,7 @@ function ContactsSection() {
                             ""
                           )}
                           {depart.email ? (
-                            <li className="infolist__item">
+                            <li className="infolist__item" key={index}>
                               Email:
                               <a href={`mailto:${depart.email}`}>
                                 {" "}
@@ -74,8 +74,16 @@ function ContactsSection() {
                             ""
                           )}{" "}
                         </ul>
-                        {depart.workdays ? <li>{depart.workdays}:</li> : ""}{" "}
-                        {depart.worktime ? <li>{depart.worktime}</li> : ""}
+                        {depart.workdays ? (
+                          <li key={index}>{depart.workdays}:</li>
+                        ) : (
+                          ""
+                        )}{" "}
+                        {depart.worktime ? (
+                          <li key={index}>{depart.worktime}</li>
+                        ) : (
+                          ""
+                        )}
                       </li>
                     );
                   })}

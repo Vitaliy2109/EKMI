@@ -7,6 +7,7 @@ import IndividFurnPage from "./pages/IndividFurnPage";
 import Contacts from "./pages/Contacts";
 import ShowRoom from "./pages/ShowRoom";
 import { Dealers } from "./pages/Dealers";
+import Partners from "./pages/Partners";
 // import NotFound from "./pages/NotFound";
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "Dealers",
         element: <Dealers />,
+      },
+      {
+        path: "Partners",
+        element: <Partners />,
       },
     ],
   },

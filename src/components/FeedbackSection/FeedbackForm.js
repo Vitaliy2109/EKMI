@@ -28,19 +28,24 @@ function FeedbackForm(props) {
     if (name === "" || name.length <= 1) {
       errors.push("Введіть ваше ім'я.");
     }
-    if (email.trim() === "") {
-      errors.push("Введіть  e-mail.");
-    } else if (!isValidEmail(email)) {
-      errors.push("Введіть правильний e-mail.");
+
+    if (!isValidEmail(email)) {
+      if (formClass === "deallers") {
+        errors.push("Введіть правильний e-mail.");
+      }
     }
     if (phone.trim() === "") {
       errors.push("Введіть номер телефону.");
     } else if (!isValidPhone(phone)) {
       errors.push("Введіть правильний номер телефону.");
     }
+
     if (!isValidLocation(location)) {
-      errors.push("Введіть ваше місто.");
+      if (formClass === "deallers") {
+        errors.push("Введіть ваше місто.");
+      }
     }
+
     if (!isChecked) {
       errors.push("Підтвердіть умови користувацької угоди.");
     }

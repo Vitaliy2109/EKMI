@@ -1,6 +1,8 @@
 import "../assets/scss/components/Brands.scss";
-
-function Brands() {
+import "atropos/css";
+import Atropos from "atropos/react";
+function Brands(props) {
+  const { title = "", className } = props;
   const brands = [
     {
       name: "Vogue",
@@ -20,15 +22,20 @@ function Brands() {
     },
   ];
   return (
-    <section id="brands">
+    <section id="brands" className={className}>
       <div className="container">
-        {brands.map((item, index) => {
-          return (
-            <div className="item" key={index}>
-              <img src={`./images/brands/${item.image}`} alt={item.name} />
-            </div>
-          );
-        })}
+        {title}
+        <div className="items-wrap">
+          {brands.map((item, index) => {
+            return (
+              <Atropos activeOffset={100} shadowScale={0}>
+                <div className="item" key={index}>
+                  <img src={`./images/brands/${item.image}`} alt={item.name} />
+                </div>
+              </Atropos>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

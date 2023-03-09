@@ -8,6 +8,11 @@
       padding-left: 37px;
       .list__item {
         position: relative;
+        &:hover {
+          .number {
+            font-size: 200px;
+          }
+        }
         .number {
           font-family: "Poppins";
           font-size: 176px;
@@ -18,6 +23,7 @@
           top: -27px;
           line-height: 154px;
           z-index: -1;
+          transition: all 0.2s ease;
           &.number-1 {
             left: -39px;
           }
