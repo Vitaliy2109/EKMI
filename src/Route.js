@@ -8,10 +8,11 @@ import Contacts from "./pages/Contacts";
 import ShowRoom from "./pages/ShowRoom";
 import { Dealers } from "./pages/Dealers";
 import Partners from "./pages/Partners";
-// import NotFound from "./pages/NotFound";
+const devHome = "/";
+const prodHome = "/EKMI/";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: window.location.hostname === "localhost" ? devHome : prodHome,
     element: <App />,
     children: [
       {
