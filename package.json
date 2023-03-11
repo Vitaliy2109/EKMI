@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/Vitaliy2109/EKMI",
+  "homepage": "https://vitaliy2109.github.io/EKMI/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.56.26",
