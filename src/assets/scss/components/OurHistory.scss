@@ -49,3 +49,135 @@
     }
   }
 }
+
+@media screen and (max-width: 1126px) {
+  .App {
+    #our-history {
+      .container {
+        .info-top {
+          flex-direction: column;
+          margin-bottom: 20px;
+          .text-block {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+            max-width: none;
+            .subtitle {
+              max-width: 700px;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              width: 10%;
+              height: 36%;
+              background-color: #ff9619;
+              right: 0;
+              bottom: -20px;
+              z-index: 2;
+            }
+          }
+          .img-wrap {
+            position: relative;
+            top: -33px;
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+        .year {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          .big {
+            margin: 0 auto;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+          }
+          .small:last-child {
+            justify-self: end;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 627px) {
+  .App {
+    #our-history {
+      .container {
+        .year {
+          .big {
+            font-size: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 567px) {
+  .App {
+    #our-history {
+      .container {
+        .year {
+          .big {
+            font-size: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 523px) {
+  .App {
+    #our-history {
+      .container {
+        .year {
+          .big {
+            font-size: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .App {
+    #our-history {
+      .container {
+        .year {
+          .big {
+            font-size: 95px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .App {
+    #our-history {
+      .container {
+        .year {
+          .big {
+            font-size: 87px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 379px) {
+  .App {
+    #our-history {
+      .container {
+        .year {
+          .big {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
+}

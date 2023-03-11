@@ -29,3 +29,80 @@
     }
   }
 }
+
+@media screen and (max-width: 897px) {
+  .App {
+    #latest-publications {
+      .container {
+        .slick-slider {
+          .item-wrap {
+            padding: 0 220px;
+          }
+          .slick-arrow.slick-prev {
+            left: 150px;
+          }
+          .slick-arrow.slick-next {
+            right: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 793px) {
+  .App {
+    #latest-publications {
+      .container {
+        .slick-slider {
+          .item-wrap {
+            padding: 0 120px;
+          }
+          .slick-arrow.slick-prev {
+            left: 60px;
+          }
+          .slick-arrow.slick-next {
+            right: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 579px) {
+  .App {
+    #latest-publications {
+      .container {
+        .slick-slider {
+          .item-wrap {
+            padding: 0 90px;
+          }
+          .slick-arrow.slick-prev {
+            left: 40px;
+          }
+          .slick-arrow.slick-next {
+            right: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 489px) {
+  .App {
+    #latest-publications {
+      .container {
+        .slick-slider {
+          .item-wrap {
+            padding: 0 60px;
+          }
+          .slick-arrow.slick-prev {
+            left: 10px;
+          }
+          .slick-arrow.slick-next {
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

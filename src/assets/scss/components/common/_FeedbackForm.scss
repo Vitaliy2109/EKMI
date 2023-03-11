@@ -180,3 +180,40 @@
     }
   }
 }
+
+//RESPOSE
+
+@media screen and (max-width: 653px) {
+  .form-wrap {
+    max-width: 370px;
+    &:before {
+      left: -50px;
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+@media screen and (max-width: 519px) {
+  .form-wrap {
+    padding: 31px 33px 17px;
+    max-width: 310px;
+    &:before {
+      width: 35px;
+      height: 35px;
+      border: 15px solid #ff9619;
+      left: -37px;
+      top: -4px;
+    }
+  }
+}
+@media screen and (max-width: 421px) {
+  .form-wrap {
+    padding: 31px 10px 17px;
+    max-width: 273px;
+    .suptitle,
+    .title {
+      position: relative;
+      left: 20px;
+    }
+  }
+}

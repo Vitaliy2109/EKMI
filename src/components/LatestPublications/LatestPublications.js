@@ -14,6 +14,14 @@ function LatestPublications() {
     slidesToScroll: 1,
     autoplay: false,
     centerMode: false,
+    responsive: [
+      {
+        breakpoint: 897,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <section id="latest-publications">

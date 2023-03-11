@@ -50,3 +50,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1099px) {
+  .App {
+    #numbers-section {
+      .container {
+        ul.list {
+          flex-direction: column;
+          align-items: center;
+          gap: 144px;
+        }
+      }
+    }
+  }
+}

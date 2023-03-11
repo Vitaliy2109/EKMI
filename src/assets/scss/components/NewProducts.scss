@@ -1,4 +1,4 @@
-#news {
+#newProducts {
   margin-bottom: 195px;
   .container {
     h2.title {
@@ -57,6 +57,84 @@
     .btn-wrap {
       width: 100%;
       text-align: center;
+    }
+  }
+}
+
+//RESPONSE
+
+@media screen and (max-width: 1213px) {
+  .App {
+    #newProducts {
+      .container {
+        .slick-arrow {
+          top: 45%;
+          &.slick-prev {
+            left: -35px;
+          }
+          &.slick-next {
+            right: -17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1051px) {
+  .App {
+    #newProducts {
+      .container {
+        .slick-slider .item-wrap .item {
+          padding: 20px;
+          padding-left: 51px;
+        }
+        .slick-arrow {
+          &.slick-prev {
+            left: 100px;
+          }
+          &.slick-next {
+            right: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 525px) {
+  .App {
+    #newProducts {
+      .container {
+        h2.title {
+          margin-bottom: 30px;
+        }
+        .item {
+          padding: 20px 0;
+          padding-left: 0;
+        }
+        .slick-arrow {
+          &.slick-prev {
+            left: 10px;
+          }
+          &.slick-next {
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 447px) {
+  .App {
+    #newProducts {
+      .container {
+        .slick-slider {
+          .item-wrap {
+            .item {
+              padding-left: 66px;
+            }
+          }
+        }
+      }
     }
   }
 }

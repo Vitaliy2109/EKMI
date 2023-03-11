@@ -24,6 +24,13 @@
     }
     .logo-wrap {
       width: 216px;
+      a {
+        display: inline-block;
+        img {
+          object-fit: contain;
+          pointer-events: none;
+        }
+      }
     }
     .about .tel {
       font-family: "Open Sans";
@@ -72,6 +79,7 @@
           display: flex;
           gap: 10px;
           align-items: center;
+
           .phone-wrap {
             display: block;
             height: 100%;

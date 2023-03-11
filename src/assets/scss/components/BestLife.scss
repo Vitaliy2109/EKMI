@@ -67,3 +67,126 @@
     }
   }
 }
+//RESPONSE
+
+@media screen and (max-width: 1290px) {
+  #bestLife {
+    .background-color {
+      height: 765px;
+    }
+    .container {
+      flex-direction: column;
+      padding-top: 30px;
+      .left-info {
+        width: 100%;
+        max-width: 625px;
+        h1.title {
+          margin-bottom: 30px;
+        }
+        .btn {
+          position: absolute;
+          bottom: -87px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .right-info {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        .swiper {
+          height: 393px;
+          width: 670px;
+          .swiper-pagination {
+            bottom: -40px;
+            .swiper-pagination-bullet {
+              opacity: 1;
+              background-color: #f2f3f5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 689px) {
+  #bestLife {
+    .container {
+      .right-info {
+        .swiper {
+          height: 380px;
+          width: 540px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 633px) {
+  #bestLife {
+    .container {
+      .right-info {
+        .swiper {
+          height: 340px;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 541px) {
+  #bestLife {
+    .container {
+      .right-info {
+        .swiper {
+          height: 340px;
+          width: 430px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 481px) {
+  #bestLife {
+    .container {
+      .right-info {
+        .swiper {
+          height: 320px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 427px) {
+  #bestLife {
+    .container {
+      .left-info {
+        h1.title {
+          font-size: 30px;
+        }
+        .btn {
+          white-space: nowrap;
+        }
+      }
+      .right-info {
+        .swiper {
+          height: 320px;
+          width: 370px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 427px) {
+  #bestLife {
+    .container {
+      .right-info {
+        .swiper {
+          height: 300px;
+          width: 340px;
+        }
+      }
+    }
+  }
+}

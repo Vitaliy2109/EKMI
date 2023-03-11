@@ -17,9 +17,25 @@ function NewProducts() {
     centerMode: true,
     centerPadding: 20,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1214,
+        settings: {
+          centerPadding: 10,
+        },
+      },
+      {
+        breakpoint: 1051,
+        settings: {
+          slidesToShow: 1,
+          rows: 2,
+          autoplay: false,
+        },
+      },
+    ],
   };
   return (
-    <section id="news">
+    <section id="newProducts">
       <div className="container">
         <h2 className="title">Новинки</h2>
         <Slider {...params}>

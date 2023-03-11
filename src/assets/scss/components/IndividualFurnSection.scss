@@ -71,6 +71,119 @@
       }
       .btn {
         padding: 13px 23px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .App {
+    #individual-furniture {
+      margin-bottom: 270px;
+      .container {
+        padding-left: 0;
+        padding-top: 79px;
+        flex-direction: column-reverse;
+        &:after {
+          right: 2px;
+        }
+        .info-wrap {
+          .btn {
+            position: absolute;
+            bottom: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .img-wrap:before {
+          z-index: -2;
+          width: 50%;
+        }
+      }
+      .background-image {
+        height: 60%;
+        left: auto;
+        right: 0;
+        z-index: -1;
+        top: 50%;
+      }
+      .background-color {
+        left: 0;
+        z-index: -2;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .App {
+    #individual-furniture {
+      .background-image {
+        top: 55%;
+        height: 55%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 522px) {
+  .App {
+    #individual-furniture {
+      .background-image {
+        height: 52%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 522px) {
+  .App {
+    #individual-furniture {
+      .container {
+        .info-wrap {
+          h2.title {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .App {
+    #individual-furniture {
+      .container {
+        .img-wrap:before {
+          left: 50px;
+        }
+        .info-wrap {
+          .btn {
+            bottom: -170px;
+          }
+        }
+      }
+      .background-image {
+        top: 59%;
+        height: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 396px) {
+  .App {
+    #individual-furniture {
+      .container {
+        gap: 20px;
+        .img-wrap:before {
+          height: 70px;
+          left: 50px;
+          bottom: -37px;
+        }
+      }
+      .background-image {
+        top: 65%;
+        height: 40%;
       }
     }
   }

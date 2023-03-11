@@ -11,7 +11,7 @@ import GallerySection from "../components/GallerySection";
 function Main() {
   return (
     <main>
-      {/* <BestLife />
+      <BestLife />
       <NewProducts />
       <IndividualFurnSection />
       <OurHistory />
@@ -20,7 +20,7 @@ function Main() {
       <NumbersSection />
       <OurPartners />
       <Brands />
-      <GallerySection /> */}
+      <GallerySection />
     </main>
   );
 }

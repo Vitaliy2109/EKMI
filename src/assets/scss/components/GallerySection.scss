@@ -73,3 +73,38 @@
 .icon-zoom-in:before {
   content: "\e900";
 }
+
+@media screen and (max-width: 900px) {
+  .App {
+    #gallerySection {
+      .container {
+        .lg-react-element {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          justify-content: center;
+          .item {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .App {
+    #gallerySection {
+      .container {
+        .lg-react-element {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          justify-content: center;
+          .item {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,3 +12,22 @@
     }
   }
 }
+
+@media screen and (max-width: 834px) {
+  .App {
+    #brands {
+      .container {
+        .items-wrap {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          align-items: center;
+          .item {
+            max-width: 150px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

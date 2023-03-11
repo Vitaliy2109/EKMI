@@ -82,3 +82,74 @@
     }
   }
 }
+
+@media screen and (max-width: 1201px) {
+  #ourPartners {
+    &:before {
+      width: 100%;
+      height: 84.5%;
+    }
+    &:after {
+      background-color: #a9c2be;
+      height: 40%;
+      left: 0;
+      top: auto;
+      bottom: -40px;
+      position: absolute;
+    }
+    .container {
+      .info-wrap {
+        align-items: center;
+        flex-direction: column;
+        padding-top: 56px;
+        .img-wrap {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .bg:before {
+      left: auto;
+      right: 30px;
+    }
+    .bg:after {
+      right: auto;
+      left: 20%;
+      width: 150px;
+      height: 90px;
+      bottom: -14px;
+    }
+  }
+}
+
+@media screen and (max-width: 583px) {
+  .App {
+    #ourPartners {
+      &:after {
+        bottom: -60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 517px) {
+  .App {
+    #ourPartners {
+      &:after {
+        height: 30%;
+        bottom: -20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 447px) {
+  .App {
+    #ourPartners {
+      &:after {
+        height: 25%;
+        bottom: 0px;
+      }
+    }
+  }
+}
