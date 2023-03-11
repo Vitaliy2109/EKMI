@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/images/header/logo.png";
 import phoneIcon from "../../assets/images/header/phone.svg";
+import "../../../node_modules/hamburgers/dist/hamburgers.css";
+
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const { pathname } = useLocation();
