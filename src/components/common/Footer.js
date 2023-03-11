@@ -14,7 +14,7 @@ function Footer() {
     setShowModal(!showModal);
   };
   const clickHandler = (e) => {
-    if (pathname === e.target.getAttribute("href")) {
+    if (`#${pathname}` === e.target.getAttribute("href")) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };

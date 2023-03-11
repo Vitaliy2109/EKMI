@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/images/header/logo.png";
 import phoneIcon from "../../assets/images/header/phone.svg";
-import Hamburger from "hamburgers/dist/hamburgers.min.css";
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const { pathname } = useLocation();
@@ -11,7 +10,7 @@ function Header() {
     setIsActive(!isActive);
   };
   const clickHandler = (e) => {
-    if (pathname === e.target.getAttribute("href")) {
+    if (`#${pathname}` === e.target.getAttribute("href")) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
