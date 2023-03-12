@@ -23,8 +23,12 @@
     .logo {
       max-width: 170px;
       max-height: 56px;
+
       a {
         display: inline-block;
+        .LazyLoad {
+          pointer-events: none;
+        }
         img {
           object-fit: contain;
           pointer-events: none;

@@ -8,6 +8,7 @@ import { GestureHandling } from "leaflet-gesture-handling";
 import L from "leaflet";
 import iconUrl from "../assets/images/Map/Marker.svg";
 import ContactsList from "../data/ContactsList.json";
+
 export function MapSection() {
   const url =
     "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png";
