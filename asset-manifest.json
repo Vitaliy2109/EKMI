@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EKMI/static/css/main.a2a94803.css",
-    "main.js": "/EKMI/static/js/main.f9048237.js",
+    "main.js": "/EKMI/static/js/main.3bb0add9.js",
     "static/media/image-1.png": "/EKMI/static/media/image-1.cbfecba5096a70ee30ae.png",
     "static/media/image-2.png": "/EKMI/static/media/image-2.8b7bdde9c4536675ee04.png",
     "static/media/bg.png": "/EKMI/static/media/bg.a4266d580454d8bdcd23.png",
@@ -91,10 +91,10 @@
     "static/media/bg.svg": "/EKMI/static/media/bg.47cdf94b066b525f93f9cfe2537b6785.svg",
     "static/media/icon-facebook.svg": "/EKMI/static/media/icon-facebook.098cdf13d91af60d02aa6522b469a6e2.svg",
     "main.a2a94803.css.map": "/EKMI/static/css/main.a2a94803.css.map",
-    "main.f9048237.js.map": "/EKMI/static/js/main.f9048237.js.map"
+    "main.3bb0add9.js.map": "/EKMI/static/js/main.3bb0add9.js.map"
   },
   "entrypoints": [
     "static/css/main.a2a94803.css",
-    "static/js/main.f9048237.js"
+    "static/js/main.3bb0add9.js"
   ]
 }
