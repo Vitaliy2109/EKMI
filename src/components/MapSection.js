@@ -10,7 +10,8 @@ import iconUrl from "../assets/images/Map/Marker.svg";
 import ContactsList from "../data/ContactsList.json";
 
 export function MapSection() {
-  const url = "https://https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+  const url =
+    "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png";
   const settings = {
     center: [48.7610168, 30.5373693],
     zoom: 7,
