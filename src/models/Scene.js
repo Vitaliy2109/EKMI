@@ -11,7 +11,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 function Model(props) {
-  const { nodes, materials } = useGLTF("/images/sofa/scene.gltf");
+  const { nodes, materials } = useGLTF("./sofa/scene.gltf");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -41,5 +41,5 @@ function Model(props) {
   );
 }
 
-useGLTF.preload("sofa/scene.gltf");
+useGLTF.preload("./sofa/scene.gltf");
 export default Model;

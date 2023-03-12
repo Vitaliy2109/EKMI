@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User agent: *
+
+Disallow: /admin/
+
+Sitemap: https://vitaliy2109.github.io/EKMI/#/sitemap.xml
+Host: localhost
