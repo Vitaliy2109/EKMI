@@ -10,8 +10,7 @@ import iconUrl from "../assets/images/Map/Marker.svg";
 import ContactsList from "../data/ContactsList.json";
 
 export function MapSection() {
-  const url =
-    "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png";
+  const url = "https://https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
   const settings = {
     center: [48.7610168, 30.5373693],
     zoom: 7,
