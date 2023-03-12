@@ -8,6 +8,7 @@ import Button from "../common/Button";
 import { isValidEmail, isValidPhone, isValidLocation } from "./Helpers";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
+import { Toast } from "react-bootstrap";
 function FeedbackForm(props) {
   const { titleText, formClass } = props;
   const [name, setName] = useState("");
@@ -94,18 +95,20 @@ E-mail: ${email}
 
   return (
     <div className="form-wrap">
-      {toast}
+      <Toast />
       <p className="suptitle">Заповніть форму</p>
       <FormTitle titleText={titleText} />
       <form id="feedback-form" onSubmit={handlerSubmit} className={formClass}>
-        <InputComponent
-          label="Ваше ім'я*"
-          value={name}
-          required
-          setInputValue={(val) => {
-            setName(val);
-          }}
-        />
+        <div className="wrap">
+          <InputComponent
+            label="Ваше ім'я*"
+            value={name}
+            required
+            setInputValue={(val) => {
+              setName(val);
+            }}
+          />
+        </div>
         {formClass === "deallers" ? (
           <InputComponent
             label="Ваш e-mail*"

@@ -2,15 +2,23 @@ import "../../assets/scss/components/ContactsSection.scss";
 import Background from "../../assets/images/ContactsSection/background.png";
 import ContactsList from "../../data/ContactsList.json";
 import ContactsItem from "./ContactsItem";
+import LazyLoad from "react-lazy-load";
+
 function ContactsSection() {
   return (
     <section id="contactsSection">
       <div className="container">
         <div className="top-info">
-          {ContactsList.mainAdress.map((el) => {
+          {ContactsList.mainAdress.map((el, index) => {
             return (
-              <div className="item-wrap">
-                <img src={Background} alt="" className="background" />
+              <div className="item-wrap" key={index}>
+                <LazyLoad>
+                  <img
+                    src={Background}
+                    alt="Background"
+                    className="background"
+                  />
+                </LazyLoad>
                 <ul className="list">
                   <li className="list__item">
                     <h3 className="street">{el.street}</h3>
@@ -20,10 +28,10 @@ function ContactsSection() {
                   </li>
                   {el.departments.map((depart, index) => {
                     return (
-                      <li className="list__item">
+                      <li className="list__item" key={index}>
                         <h3 className="title">
                           {index === 0 ? (
-                            <div key={index}>
+                            <div>
                               Адреса:
                               <a
                                 href={el.adressLink}
@@ -38,52 +46,44 @@ function ContactsSection() {
                             depart.title
                           )}
                         </h3>
-                        <ul className="info-list">
+                        <div className="info-list">
                           {depart.phone ? (
-                            <li className="infolist__item" key={index}>
+                            <div className="infolist__item">
                               Тел.:
                               <a href={`tel:${depart.phone}`}>
                                 {" "}
                                 {depart.phone}
                               </a>
-                            </li>
+                            </div>
                           ) : (
                             ""
                           )}
                           {depart.viber ? (
-                            <li className="infolist__item" key={index}>
+                            <div className="infolist__item">
                               Тел.:
                               <a href={`tel:${depart.viber}`}>
                                 {" "}
                                 {depart.viber}{" "}
                               </a>
                               (Viber)
-                            </li>
+                            </div>
                           ) : (
                             ""
                           )}
                           {depart.email ? (
-                            <li className="infolist__item" key={index}>
+                            <div className="infolist__item">
                               Email:
                               <a href={`mailto:${depart.email}`}>
                                 {" "}
                                 {depart.email}
                               </a>
-                            </li>
+                            </div>
                           ) : (
                             ""
                           )}{" "}
-                        </ul>
-                        {depart.workdays ? (
-                          <li key={index}>{depart.workdays}:</li>
-                        ) : (
-                          ""
-                        )}{" "}
-                        {depart.worktime ? (
-                          <li key={index}>{depart.worktime}</li>
-                        ) : (
-                          ""
-                        )}
+                        </div>
+                        {depart.workdays ? <div>{depart.workdays}:</div> : ""}{" "}
+                        {depart.worktime ? <div>{depart.worktime}</div> : ""}
                       </li>
                     );
                   })}
@@ -92,8 +92,8 @@ function ContactsSection() {
             );
           })}
         </div>
-        <div className="small-list">
-          {ContactsList.additional.map((el) => {
+        <ul className="small-list">
+          {ContactsList.additional.map((el, index) => {
             return (
               <ContactsItem
                 city={el.city}
@@ -102,10 +102,11 @@ function ContactsSection() {
                 location={el.location}
                 email={el.email}
                 phone={el.phone}
+                key={index}
               />
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );

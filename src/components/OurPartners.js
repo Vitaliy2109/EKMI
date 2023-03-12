@@ -1,5 +1,6 @@
 import "../assets/scss/components/OurPartners.scss";
 import image from "../assets/images/OurPartners/img-1.png";
+import LazyLoad from "react-lazy-load";
 function OurPartners() {
   return (
     <section id="ourPartners">
@@ -22,7 +23,9 @@ function OurPartners() {
             </p>
           </div>
           <div className="img-wrap">
-            <img src={image} alt="" />
+            <LazyLoad>
+              <img src={image} alt="Sofa Image" />
+            </LazyLoad>
           </div>
         </div>
       </div>

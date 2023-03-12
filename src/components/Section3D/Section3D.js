@@ -4,6 +4,7 @@ import Button from "../common/Button";
 import { Link } from "react-router-dom";
 import icon360 from "../../assets/images/section3D/360-icon.jpg";
 import { useState } from "react";
+import LazyLoad from "react-lazy-load";
 function Section3D() {
   const [classBig, setClassBig] = useState(false);
   const changeClass = () => {
@@ -15,13 +16,16 @@ function Section3D() {
         <div className="left-info">
           <div className="sofa-wrap">
             <Sofa />
+
             <button
               type="button"
               className="changeClassbtn"
               onClick={changeClass}
             ></button>
             <div className="icon-wrap">
-              <img src={icon360} alt="" />
+              <LazyLoad>
+                <img src={icon360} alt="Icon 360" />
+              </LazyLoad>
             </div>
           </div>
         </div>

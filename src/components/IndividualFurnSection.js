@@ -3,16 +3,19 @@ import Background from "../assets/images/individualFurnSection/bg.svg";
 import image from "../assets/images/individualFurnSection/image-1.png";
 import Button from "./common/Button";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 function IndividualFurnSection() {
   return (
     <section id="individual-furniture">
       <div className="background-image">
-        <img src={Background} alt="" />
+        <img src={Background} alt="Background Image" />
       </div>
       <div className="background-color"></div>
       <div className="container">
         <div className="img-wrap">
-          <img src={image} alt="" />
+          <LazyLoad>
+            <img src={image} alt="Sofa Image" />
+          </LazyLoad>
         </div>
         <div className="info-wrap">
           <h2 className="title">Індивідуальні меблі</h2>

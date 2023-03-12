@@ -41,3 +41,25 @@
     margin-bottom: 160px;
   }
 }
+
+//RESPONSE
+
+@media screen and (max-width: 430px) {
+  .App {
+    #slideGallery {
+      .container {
+        .item-wrap {
+          padding: 20px 50px;
+          .item {
+            i {
+              transform: translatex(-50%) translateY(-370%);
+            }
+            &:hover i {
+              transform: translateY(-70%) translatex(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

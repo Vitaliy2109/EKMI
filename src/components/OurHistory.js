@@ -1,5 +1,6 @@
 import "../assets/scss/components/OurHistory.scss";
 import image from "../assets/images/OurHistory/img-1.png";
+import LazyLoad from "react-lazy-load";
 function OurHistory() {
   return (
     <section id="our-history">
@@ -15,7 +16,9 @@ function OurHistory() {
             </p>
           </div>
           <div className="img-wrap">
-            <img src={image} alt="" />
+            <LazyLoad>
+              <img src={image} alt="Sofa-Image" />
+            </LazyLoad>
           </div>
         </div>
         <div className="year">

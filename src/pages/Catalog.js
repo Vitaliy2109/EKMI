@@ -1,3 +1,7 @@
+import "../assets/scss/components/Catalog.scss";
+import "lightgallery/scss/lightgallery.scss";
+import "lightgallery/scss/lg-zoom.scss";
+import "lightgallery/scss/lg-thumbnail.scss";
 import Products from "../data/products.json";
 import LightGallery from "lightgallery/react";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
@@ -5,11 +9,8 @@ import lgZoom from "lightgallery/plugins/zoom";
 import FilterButton from "../components/Catalog/FilterButton";
 import PaginationWrap from "../components/Catalog/Pagination-wrap";
 import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
+import LazyLoad from "react-lazy-load";
 import { useState } from "react";
-import "../assets/scss/components/Catalog.scss";
-import "lightgallery/scss/lightgallery.scss";
-import "lightgallery/scss/lg-zoom.scss";
-import "lightgallery/scss/lg-thumbnail.scss";
 
 function Catalog() {
   const [filtered, setFilterd] = useState(Products);
@@ -104,7 +105,12 @@ function Catalog() {
                   type={el.type}
                   onClick={() => productsFilter(el.type)}
                   image={
-                    <img src={`./images/CatalogImages/${el.image}`} alt="" />
+                    <LazyLoad>
+                      <img
+                        src={`./images/CatalogImages/${el.image}`}
+                        alt="Sofa Image"
+                      />
+                    </LazyLoad>
                   }
                 />
               );
@@ -115,31 +121,29 @@ function Catalog() {
       <section id="section-catalog">
         <div className="container">
           <div className="navigation-wrap">
-            <ul>
-              <li>
-                <a href="#" className="title">
-                  Каталог
-                </a>
-                <ul className="dropdown">
-                  <FilterButton
-                    text="Всі товари"
-                    type="sofa"
-                    onClick={() => productsFilter("all")}
-                  />
-                  {filterButtonsArr.map((el, index) => {
-                    return (
-                      <FilterButton
-                        key={index}
-                        text={el.text}
-                        type={el.type}
-                        onClick={() => productsFilter(el.type)}
-                      />
-                    );
-                  })}
-                </ul>
-              </li>
-            </ul>
-            <div className="right-info">
+            <div className="left-info">
+              <ul>
+                <li>
+                  <p className="title">Каталог</p>
+                  <ul className="dropdown">
+                    <FilterButton
+                      text="Всі товари"
+                      type="sofa"
+                      onClick={() => productsFilter("all")}
+                    />
+                    {filterButtonsArr.map((el, index) => {
+                      return (
+                        <FilterButton
+                          key={index}
+                          text={el.text}
+                          type={el.type}
+                          onClick={() => productsFilter(el.type)}
+                        />
+                      );
+                    })}
+                  </ul>
+                </li>
+              </ul>
               <div className={`buttons-wrap${classSmall ? " small" : ""}`}>
                 <div
                   className="button-col-4"
@@ -154,6 +158,8 @@ function Catalog() {
                   <div></div>
                 </div>
               </div>
+            </div>
+            <div className="right-info">
               <div className="input-wrap">
                 <input
                   type="text"
@@ -197,7 +203,11 @@ function Catalog() {
                       className="item"
                       key={index}
                     >
-                      <img src={`./images/products/${elem.photo}`} alt="" />
+                      <img
+                        src={`./images/products/${elem.photo}`}
+                        alt={elem.name}
+                      />
+
                       <div className="text-wrap">
                         {" "}
                         <p className="name">{elem.name}</p>

@@ -1,12 +1,12 @@
 import "../../assets/scss/components/common/_Footer.scss";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-
 import logo from "../../assets/images/footer/logo.svg";
 import instagramIcon from "../../assets/images/footer/icon-instagram.svg";
 import facebookIcon from "../../assets/images/footer/icon-facebook.svg";
 import Modal from "./Modal";
 import ScrollToTop from "../common/ScrollToTop";
+import LazyLoad from "react-lazy-load";
 function Footer() {
   const [showModal, setShowModal] = useState(false);
   const { pathname } = useLocation();
@@ -24,7 +24,9 @@ function Footer() {
       <div className="container">
         <div className="logo">
           <Link to={"/"} onClick={clickHandler}>
-            <img src={logo} alt="" />
+            <LazyLoad>
+              <img src={logo} alt="Logo" />
+            </LazyLoad>
           </Link>
         </div>
         <div className="text-info">
@@ -81,14 +83,18 @@ function Footer() {
                 target="_blank"
                 className="instagram"
               >
-                <img src={instagramIcon} alt="" />
+                <LazyLoad>
+                  <img src={instagramIcon} alt="Instagram Icon" />
+                </LazyLoad>
               </a>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 className="facebook"
               >
-                <img src={facebookIcon} alt="" />
+                <LazyLoad>
+                  <img src={facebookIcon} alt="Facebook Icon" />
+                </LazyLoad>
               </a>
             </div>
             <div className="list__item">

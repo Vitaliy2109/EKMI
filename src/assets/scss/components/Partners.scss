@@ -181,3 +181,116 @@
     }
   }
 }
+
+//RESPONSE
+
+@media screen and (max-width: 1182px) {
+  .App {
+    #mainProd {
+      .container {
+        .info-wrap {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          gap: 30px;
+          &:hover {
+            .text-info {
+              transform: scale(1);
+            }
+            .img-wrap {
+              transform: scale(1);
+            }
+          }
+          .img-wrap {
+            max-width: 613px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1064px) {
+  .App {
+    #whyWithUs {
+      .container {
+        .swiper {
+          .item-wrap {
+            .item {
+              padding-right: 0;
+              padding-top: 55px;
+              flex-direction: column;
+              gap: 40px;
+            }
+          }
+          .swiper-pagination {
+            position: relative;
+            top: auto;
+            bottom: 300px;
+            left: calc(26%);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 612px) {
+  .App {
+    #mainProd {
+      margin-bottom: 120px;
+      padding-top: 0;
+      .container {
+        .info-wrap {
+          text-align: left;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 453px) {
+  .App {
+    #whyWithUs {
+      margin-bottom: 100px;
+      .container {
+        h2.title {
+          margin-bottom: 40px;
+        }
+        .swiper {
+          .swiper-pagination {
+            bottom: 320px;
+            left: 0;
+          }
+        }
+      }
+    }
+    #allProducts {
+      margin-bottom: 100px;
+    }
+  }
+}
+@media screen and (max-width: 421px) {
+  .App {
+    #whyWithUs {
+      .container {
+        .swiper {
+          .swiper-pagination {
+            bottom: 360px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 373px) {
+  .App {
+    #whyWithUs {
+      .container {
+        .swiper {
+          .swiper-pagination {
+            bottom: 380px;
+          }
+        }
+      }
+    }
+  }
+}

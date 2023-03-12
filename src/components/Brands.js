@@ -1,6 +1,7 @@
 import "../assets/scss/components/Brands.scss";
 import "atropos/css";
 import Atropos from "atropos/react";
+import LazyLoad from "react-lazy-load";
 function Brands(props) {
   const { title = "", className } = props;
   const brands = [
@@ -28,9 +29,14 @@ function Brands(props) {
         <div className="items-wrap">
           {brands.map((item, index) => {
             return (
-              <Atropos activeOffset={100} shadowScale={0}>
-                <div className="item" key={index}>
-                  <img src={`./images/brands/${item.image}`} alt={item.name} />
+              <Atropos activeOffset={100} shadowScale={0} key={index}>
+                <div className="item">
+                  <LazyLoad>
+                    <img
+                      src={`./images/brands/${item.image}`}
+                      alt={item.name}
+                    />
+                  </LazyLoad>
                 </div>
               </Atropos>
             );

@@ -1,16 +1,17 @@
 import "../../assets/scss/components/common/_Header.scss";
+import "../../../node_modules/hamburgers/dist/hamburgers.css";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/images/header/logo.png";
 import phoneIcon from "../../assets/images/header/phone.svg";
-import "../../../node_modules/hamburgers/dist/hamburgers.css";
-
+import LazyLoad from "react-lazy-load";
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const { pathname } = useLocation();
   const changeClass = () => {
     setIsActive(!isActive);
   };
+
   const clickHandler = (e) => {
     if (`#${pathname}` === e.target.getAttribute("href")) {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -40,7 +41,9 @@ function Header() {
         </nav>
         <div className="logo-wrap">
           <Link to={"/"} onClick={clickHandler}>
-            <img src={logo} alt="" />
+            <LazyLoad>
+              <img src={logo} alt="Logo" />
+            </LazyLoad>
           </Link>
         </div>
         <div className="about">
@@ -57,7 +60,9 @@ function Header() {
         <div className="mobile-wrap">
           <div className="phone-wrap">
             <a href="tel:+38099-638-45-37" className="tel">
-              <img src={phoneIcon} alt="" />
+              <LazyLoad>
+                <img src={phoneIcon} alt="Phone Icon" />
+              </LazyLoad>
             </a>
           </div>
           <div className="hamburger-menu">

@@ -6,7 +6,7 @@ import "lightgallery/scss/lg-zoom.scss";
 import "lightgallery/scss/lg-thumbnail.scss";
 import LightGallery from "lightgallery/react";
 import Slider from "react-slick";
-
+import LazyLoad from "react-lazy-load";
 import ProdList from "../../data/products.json";
 
 function SwipeGallery(props) {
@@ -22,6 +22,26 @@ function SwipeGallery(props) {
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 1700,
+    responsive: [
+      {
+        breakpoint: 830,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 710,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <section id="slideGallery" className={className}>
@@ -33,8 +53,13 @@ function SwipeGallery(props) {
                 <div className="item-wrap" key={index}>
                   <div className="item">
                     <LightGallery>
-                      <img src={`./images/products/${item.photo}`} alt="" />
                       <a href={`./images/products/${item.photo}`}>
+                        <LazyLoad>
+                          <img
+                            src={`./images/products/${item.photo}`}
+                            alt={item.name}
+                          />
+                        </LazyLoad>
                         <i className="icon-zoom-in"></i>
                       </a>
                     </LightGallery>

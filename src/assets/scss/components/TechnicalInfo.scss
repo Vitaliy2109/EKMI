@@ -40,7 +40,7 @@
             color: #343434;
             width: 155px;
             position: relative;
-            align-self: center;
+            align-self: start;
             &:before {
               content: "";
               position: absolute;
@@ -66,6 +66,60 @@
     }
     .btn {
       align-self: end;
+    }
+  }
+}
+
+@media screen and (max-width: 1334px) {
+  .App {
+    #technical-info {
+      .container {
+        .info-wrap {
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .App {
+    #technical-info {
+      .container {
+        .info-wrap {
+          padding-left: 40px;
+          .list {
+            .list__item {
+              .title {
+                flex-basis: 40%;
+                font-size: 14px;
+              }
+              .info {
+                font-size: 14px;
+                flex-basis: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 448px) {
+  .App {
+    #technical-info {
+      .container {
+        .info-wrap {
+          h3.title {
+            text-align: center;
+          }
+          .list {
+            .list__item {
+              flex-direction: column;
+              gap: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }

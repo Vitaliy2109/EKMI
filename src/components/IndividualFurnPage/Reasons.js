@@ -5,6 +5,7 @@ import "lightgallery/scss/lg-thumbnail.scss";
 import LightGallery from "lightgallery/react";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
+import LazyLoad from "react-lazy-load";
 function Reasons(props) {
   const {
     info = [
@@ -44,7 +45,9 @@ function Reasons(props) {
                   actualSize={false}
                 >
                   <a href={`./images/Reasons/${el.image}`}>
-                    <img src={`./images/Reasons/${el.image}`} alt="" />
+                    <LazyLoad>
+                      <img src={`./images/Reasons/${el.image}`} alt={el.text} />
+                    </LazyLoad>
                   </a>
                 </LightGallery>
               </div>

@@ -6,7 +6,9 @@ import React from "react";
 import ProdList from "../../data/products.json";
 import NewProductItem from "./NewProductItem";
 import Button from "../common/Button";
+
 import { Link } from "react-router-dom";
+
 function NewProducts() {
   const params = {
     dots: false,

@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://vitaliy2109.github.io/EKMI/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.56.26",
@@ -19,6 +20,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-lazy-load": "^4.0.1",
     "react-leaflet": "^4.2.1",
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.8.1",

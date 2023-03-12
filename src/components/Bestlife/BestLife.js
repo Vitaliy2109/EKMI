@@ -8,6 +8,7 @@ import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Pagination } from "swiper";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 SwiperCore.use([Autoplay]);
 function BestLife() {
   return (
@@ -42,13 +43,19 @@ function BestLife() {
             }}
           >
             <SwiperSlide>
-              <img src="./images/bestLife/slide-1.png" alt="" />
+              <LazyLoad>
+                <img src="./images/bestLife/slide-1.png" alt="Sofa Image" />
+              </LazyLoad>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="./images/bestLife/slide-2.png" alt="" />
+              <LazyLoad>
+                <img src="./images/bestLife/slide-2.png" alt="Sofa Image" />
+              </LazyLoad>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="./images/bestLife/slide-3.png" alt="" />
+              <LazyLoad>
+                <img src="./images/bestLife/slide-3.png" alt="Sofa Image" />
+              </LazyLoad>
             </SwiperSlide>
           </Swiper>
         </div>

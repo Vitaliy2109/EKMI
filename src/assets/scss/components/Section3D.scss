@@ -141,3 +141,134 @@
     }
   }
 }
+
+@media screen and (max-width: 1252px) {
+  .App {
+    #section3D {
+      .container {
+        flex-direction: column;
+        .left-info {
+          .sofa-wrap {
+            width: 100%;
+            .sofa {
+              width: 100%;
+              margin: 0 auto;
+            }
+            .changeClassbtn {
+              display: none;
+            }
+          }
+        }
+        .text-info {
+          text-align: center;
+
+          max-width: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 842px) {
+  .App {
+    #section3D {
+      .container {
+        .left-info {
+          .sofa-wrap {
+            .sofa {
+              width: 673px !important;
+              height: 356px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 754px) {
+  .App {
+    #section3D {
+      .container {
+        .left-info {
+          .sofa-wrap {
+            .sofa {
+              width: 624px !important;
+              height: 329px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 674px) {
+  .App {
+    #section3D {
+      .container {
+        .left-info {
+          .sofa-wrap {
+            height: 289px;
+            .sofa {
+              width: 544px !important;
+              height: 290px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 588px) {
+  .App {
+    #section3D {
+      .container {
+        .left-info {
+          .sofa-wrap {
+            height: 260px;
+            .sofa {
+              height: 246px !important;
+              width: 461px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 492px) {
+  .App {
+    #section3D {
+      .container {
+        .left-info {
+          .sofa-wrap {
+            height: 207px;
+            .sofa {
+              height: 210px !important;
+              width: 397px !important;
+            }
+            .icon-wrap {
+              width: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .App {
+    #section3D {
+      .container {
+        .left-info {
+          .sofa-wrap {
+            height: 175px;
+            .sofa {
+              height: 175px !important;
+              width: 329px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

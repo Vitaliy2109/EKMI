@@ -1,7 +1,8 @@
+import "atropos/css";
 import image1 from "../../assets/images/IndividualFurniture/BrandSection/image-1.png";
 import image2 from "../../assets/images/IndividualFurniture/BrandSection/image-2.png";
-import "atropos/css";
 import Atropos from "atropos/react";
+import LazyLoad from "react-lazy-load";
 function BrandSection() {
   return (
     <section id="brandSection">
@@ -9,7 +10,9 @@ function BrandSection() {
         <div className="container">
           <div className="img-wrap">
             <Atropos activeOffset={20} shadowScale={1}>
-              <img src={image1} alt="" />
+              <LazyLoad>
+                <img src={image1} alt="Sofa Image" />
+              </LazyLoad>
             </Atropos>
           </div>
 
@@ -45,7 +48,9 @@ function BrandSection() {
           </div>
           <div className="img-wrap">
             <Atropos activeOffset={20} shadowScale={1}>
-              <img src={image2} alt="" />
+              <LazyLoad>
+                <img src={image2} alt="Sofa Image" />
+              </LazyLoad>
             </Atropos>
           </div>
         </div>

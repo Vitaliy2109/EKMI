@@ -1,11 +1,11 @@
-import LightGallery from "lightgallery/react";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
 import "../assets/scss/components/GallerySection.scss";
-
 import "lightgallery/scss/lightgallery.scss";
 import "lightgallery/scss/lg-zoom.scss";
 import "lightgallery/scss/lg-thumbnail.scss";
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
 function GallerySection() {
   const items = [
     {
@@ -29,6 +29,7 @@ function GallerySection() {
           plugins={[lgThumbnail, lgZoom]}
           thumbWidth={100}
           actualSize={false}
+          arrows={true}
         >
           {items.map((el, index) => {
             return (
@@ -37,7 +38,10 @@ function GallerySection() {
                 className="item"
                 key={index}
               >
-                <img src={`./images/gallery-section/${el.img}`} alt="" />
+                <img
+                  src={`./images/gallery-section/${el.img}`}
+                  alt="Gallery Image"
+                />
                 <i className="icon-zoom-in"></i>
               </a>
             );

@@ -50,6 +50,7 @@
         overflow: visible;
         .swiper-pagination {
           bottom: -35px;
+          pointer-events: none;
           .swiper-pagination-bullet {
             &.swiper-pagination-bullet-active {
               background-color: #ff9619;

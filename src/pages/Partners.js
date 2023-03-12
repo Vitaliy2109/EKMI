@@ -12,6 +12,7 @@ import Button from "../components/common/Button";
 import { Link } from "react-router-dom";
 import Brands from "../components/Brands";
 import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
+import LazyLoad from "react-lazy-load";
 export default function Partners() {
   const infoArr = [
     {
@@ -73,7 +74,9 @@ export default function Partners() {
                 </div>
 
                 <div className="img-wrap">
-                  <img src={`./images/MainProd/${el.image}`} alt="" />
+                  <LazyLoad>
+                    <img src={`./images/MainProd/${el.image}`} alt={el.info} />
+                  </LazyLoad>
                 </div>
               </div>
             );
@@ -99,7 +102,12 @@ export default function Partners() {
                   <div className="item-wrap">
                     <div className="item">
                       <div className="img-wrap">
-                        <img src={`./images/Facts/${item.image}`} alt="" />
+                        <LazyLoad>
+                          <img
+                            src={`./images/Facts/${item.image}`}
+                            alt={item.title}
+                          />
+                        </LazyLoad>
                       </div>
                       <div className="text-info">
                         <p className="suptitle">Факти:</p>
@@ -134,12 +142,29 @@ export default function Partners() {
             autoplay={false}
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper3d"
+            resizeObserver={true}
+            breakpoints={{
+              340: {
+                slidesPerView: 2,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {ProdList.map((el, index) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className="partners">
                   <div className="item-wrap">
-                    <img src={`./images/products/${el.photo}`} alt="" />
+                    <LazyLoad>
+                      <img
+                        src={`./images/products/${el.photo}`}
+                        alt={el.name}
+                      />
+                    </LazyLoad>
                   </div>
                 </SwiperSlide>
               );

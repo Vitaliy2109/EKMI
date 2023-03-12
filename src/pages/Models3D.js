@@ -9,7 +9,10 @@ function Models3D() {
       <Section3D />
       <SwipeGallery />
       <TechnicalInformation />
-      <FeedbackSection titleText="Бажаєте диван Barselona у свій інтер'єр?" />
+      <FeedbackSection
+        titleText="Бажаєте диван Barselona у свій інтер'єр?"
+        formClass="3dpage"
+      />
       <LatestPublications />
     </main>
   );

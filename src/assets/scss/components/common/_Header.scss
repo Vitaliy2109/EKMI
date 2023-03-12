@@ -13,6 +13,9 @@
     align-items: center;
     a {
       color: #343434;
+      &:hover {
+        color: #ff9619;
+      }
     }
     .list,
     .about {
@@ -26,6 +29,9 @@
       width: 216px;
       a {
         display: inline-block;
+        .LazyLoad {
+          pointer-events: none;
+        }
         img {
           object-fit: contain;
           pointer-events: none;
@@ -108,6 +114,7 @@
           .mobile-navigation {
             .list {
               transform: translatex(100%);
+
               transition: all 0.5s ease;
               width: 300px;
               padding: 29px 20px;

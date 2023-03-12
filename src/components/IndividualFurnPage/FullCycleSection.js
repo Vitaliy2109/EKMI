@@ -1,6 +1,7 @@
 import Button from "../common/Button";
 import image1 from "../../assets/images/IndividualFurniture/FullCycleSection/image-1.jpg";
 import Modal from "../common/Modal";
+import LazyLoad from "react-lazy-load";
 import { useState } from "react";
 function FullCycleSection() {
   const [showModal, setShowModal] = useState(false);
@@ -19,7 +20,9 @@ function FullCycleSection() {
           <Button text="Зв'язатися з менеджером" onClick={toggleModal} />
         </div>
         <div className="img-wrap">
-          <img src={image1} alt="" />
+          <LazyLoad>
+            <img src={image1} alt="Sofa Image" />
+          </LazyLoad>
         </div>
       </div>
       <Modal handleClose={toggleModal} show={showModal} />

@@ -78,6 +78,7 @@
       justify-content: space-between;
       align-items: center;
       position: relative;
+      gap: 30px;
       &:hover {
         &:nth-child(2) {
           .img-wrap {
@@ -87,15 +88,9 @@
       }
       .img-wrap {
         position: relative;
-        &:after {
-          content: "";
-          position: absolute;
-          right: -70px;
-          bottom: -51px;
-          width: 282px;
-          height: 333px;
-          background-color: #a9c2be;
-          z-index: -1;
+
+        img {
+          box-shadow: 50px 50px 0 20px #a9c2be;
         }
       }
       &:nth-child(1) {
@@ -107,8 +102,8 @@
         margin-bottom: 131px;
         .img-wrap {
           transform: scale(-1, 1);
-          &:after {
-            background-color: #5b5b5b;
+          img {
+            box-shadow: 50px 50px 0 20px #5b5b5b;
           }
         }
         .title {
@@ -148,6 +143,20 @@
         line-height: 24px;
         letter-spacing: 0.07em;
         color: #343434;
+      }
+    }
+  }
+}
+
+//RESPONSE
+
+@media screen and (max-width: 1031px) {
+  .App {
+    #reasons.deallers {
+      .info-block {
+        &:nth-child(1) {
+          margin-bottom: 150px;
+        }
       }
     }
   }
