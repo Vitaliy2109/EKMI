@@ -3,6 +3,7 @@ import image1 from "../../assets/images/IndividualFurniture/FullCycleSection/ima
 import Modal from "../common/Modal";
 import LazyLoad from "react-lazy-load";
 import { useState } from "react";
+
 function FullCycleSection() {
   const [showModal, setShowModal] = useState(false);
 
@@ -13,11 +14,17 @@ function FullCycleSection() {
     <section id="fullCycleSection">
       <div className="container">
         <div className="textInfo">
-          <h2 className="title">Повний цикл виробництва</h2>
-          <p className="text">
+          <h2 className="title animate__animated animate__fadeInDown">
+            Повний цикл виробництва
+          </h2>
+          <p className="text animate__animated animate__fadeInDown">
             Якість м'яких меблів починається задовго до початку її виробництва.
           </p>
-          <Button text="Зв'язатися з менеджером" onClick={toggleModal} />
+          <Button
+            text="Зв'язатися з менеджером"
+            onClick={toggleModal}
+            className="animate__animated animate__fadeInUp animate__delay-1s"
+          />
         </div>
         <div className="img-wrap">
           <LazyLoad>

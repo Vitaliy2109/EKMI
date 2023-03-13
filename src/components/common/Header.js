@@ -5,18 +5,51 @@ import { useState } from "react";
 import logo from "../../assets/images/header/logo.png";
 import phoneIcon from "../../assets/images/header/phone.svg";
 import LazyLoad from "react-lazy-load";
-function Header() {
+export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const { pathname } = useLocation();
   const changeClass = () => {
     setIsActive(!isActive);
   };
-
   const clickHandler = (e) => {
     if (`#${pathname}` === e.target.getAttribute("href")) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
+  const links = [
+    {
+      linkto: "/Catalog",
+      text: "Каталог",
+    },
+    {
+      linkto: "/Models3D",
+      text: "2D, 3D Моделі",
+    },
+    {
+      linkto: "/",
+      text: "Про компанію",
+    },
+    {
+      linkto: "/Show-Room",
+      text: "Шоу-Рум",
+    },
+    {
+      linkto: "/Individual-Furniture",
+      text: "Індивідуальні меблі",
+    },
+    {
+      linkto: "/Dealers",
+      text: "Постачальникам",
+    },
+    {
+      linkto: "/Partners",
+      text: "Партнерам Дизайнерам",
+    },
+    {
+      linkto: "/Contacts",
+      text: "Контакти",
+    },
+  ];
   return (
     <header id="header">
       <div className="container">
@@ -79,45 +112,15 @@ function Header() {
             </button>
             <nav className={`mobile-navigation ${isActive ? "is-active" : ""}`}>
               <ul className="list">
-                <li className="list__item">
-                  <Link to="/Catalog" onClick={clickHandler}>
-                    Каталог
-                  </Link>
-                </li>
-                <li className="list__item">
-                  <Link
-                    to="/Individual-Furniture"
-                    href="#"
-                    onClick={clickHandler}
-                  >
-                    Індивідуальні Меблі
-                  </Link>
-                </li>
-                <li className="list__item">
-                  <Link to="/Models3D" onClick={clickHandler}>
-                    2D, 3D Моделі
-                  </Link>
-                </li>
-                <li className="list__item">
-                  <Link to="/Show-Room" onClick={clickHandler}>
-                    Шоу рум
-                  </Link>
-                </li>
-                <li className="list__item">
-                  <Link to="/Partners" onClick={clickHandler}>
-                    Сторінка партнерів дизайнерів
-                  </Link>
-                </li>
-                <li className="list__item">
-                  <Link to="/Dealers" onClick={clickHandler}>
-                    Постачальникам
-                  </Link>
-                </li>
-                <li className="list__item">
-                  <Link to="/Contacts" onClick={clickHandler}>
-                    Контакти
-                  </Link>
-                </li>
+                {links.map((el, index) => {
+                  return (
+                    <li className="list__item" key={index}>
+                      <Link to={el.linkto} onClick={clickHandler}>
+                        {el.text}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>
@@ -126,5 +129,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

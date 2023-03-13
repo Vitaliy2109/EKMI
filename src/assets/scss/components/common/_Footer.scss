@@ -23,7 +23,7 @@
     .logo {
       max-width: 170px;
       max-height: 56px;
-
+      margin-right: 10px;
       a {
         display: inline-block;
         .LazyLoad {
@@ -36,8 +36,16 @@
       }
     }
     .text-info {
-      display: flex;
-      gap: 97px;
+      .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 97px;
+        .list__item {
+          display: flex;
+          align-items: center;
+          justify-self: start;
+        }
+      }
     }
     .socials {
       display: flex;

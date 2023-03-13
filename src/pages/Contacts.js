@@ -3,7 +3,7 @@ import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
 function Contacts() {
   return (
     <main>
-      <ContactsSection />
+      <ContactsSection className="animate__animated animate__fadeIn" />
       <FeedbackSection titleText="Залишились питання?" />
     </main>
   );

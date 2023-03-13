@@ -1,27 +1,47 @@
 import "../assets/scss/components/TechnicalInfo.scss";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import TechInfo from "../data/TechInfo.json";
 function TechnicalInformation() {
   return (
-    <section id="technical-info">
-      <div className="container">
-        <div className="info-wrap">
-          <h3 className="title">Технічна інформація</h3>
-          <ul className="list">
-            {Object.keys(TechInfo[0]).map((key, index) => (
-              <li key={index} className="list__item">
-                <p className="title">{key}:</p>
-                <p className="info"> {TechInfo[0][key]}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+      <section id="technical-info">
+        <div className="container">
+          <div className="info-wrap">
+            <h3 className="title">Технічна інформація</h3>
+            <ul className="list">
+              {Object.keys(TechInfo[0]).map((key, index) => (
+                <li key={index} className="list__item">
+                  <AnimationOnScroll
+                    animateIn="animate__fadeInLeft"
+                    animateOnce={true}
+                    delay={500}
+                  >
+                    <p className="title">{key}:</p>
+                  </AnimationOnScroll>
 
-        <a href="./PDF/TechInfo.pdf" download className="btn">
-          Завантажити характеристику
-        </a>
-      </div>
-    </section>
+                  <AnimationOnScroll
+                    animateIn="animate__fadeInRight"
+                    animateOnce={true}
+                    delay={500}
+                  >
+                    <p className="info"> {TechInfo[0][key]}</p>
+                  </AnimationOnScroll>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <AnimationOnScroll
+            animateIn="animate__fadeInUp"
+            animateOnce={true}
+            delay={800}
+          >
+            <a href="./PDF/TechInfo.pdf" download className="btn">
+              Завантажити характеристику
+            </a>
+          </AnimationOnScroll>
+        </div>
+      </section>
+    </AnimationOnScroll>
   );
 }
 

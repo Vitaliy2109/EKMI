@@ -1,6 +1,7 @@
 import FeedbackForm from "../FeedbackSection/FeedbackForm";
 import { Parallax } from "react-parallax";
 import bg from "../../assets/images/IndividualFurniture/sectionForm1/bg-image.jpg";
+
 function SectionForm1() {
   return (
     <section id="sectionForm1">

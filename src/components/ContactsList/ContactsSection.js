@@ -4,9 +4,10 @@ import ContactsList from "../../data/ContactsList.json";
 import ContactsItem from "./ContactsItem";
 import LazyLoad from "react-lazy-load";
 
-function ContactsSection() {
+function ContactsSection(props) {
+  const { className } = props;
   return (
-    <section id="contactsSection">
+    <section id="contactsSection" className={className}>
       <div className="container">
         <div className="top-info">
           {ContactsList.mainAdress.map((el, index) => {

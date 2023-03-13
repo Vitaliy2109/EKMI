@@ -88,7 +88,7 @@
           position: absolute;
           bottom: -87px;
           left: 50%;
-          transform: translateX(-50%);
+          transform: translateX(-50%) !important;
         }
       }
       .right-info {
@@ -125,6 +125,7 @@
 
 @media screen and (max-width: 633px) {
   #bestLife {
+    margin-bottom: 260px;
     .container {
       .right-info {
         .swiper {
@@ -181,6 +182,10 @@
 }
 @media screen and (max-width: 427px) {
   #bestLife {
+    margin-bottom: 200px;
+    .background-color {
+      height: 640px;
+    }
     .container {
       .right-info {
         .swiper {

@@ -6,6 +6,7 @@ import LightGallery from "lightgallery/react";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import LazyLoad from "react-lazy-load";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 function Reasons(props) {
   const {
     info = [
@@ -35,22 +36,35 @@ function Reasons(props) {
           return (
             <div className="info-block" key={index}>
               <h3 className="title">{el.title}</h3>
-              <div className="text-info">
-                <p className="text">{el.text}</p>
-              </div>
-              <div className="img-wrap">
-                <LightGallery
-                  plugins={[lgThumbnail, lgZoom]}
-                  thumbWidth={100}
-                  actualSize={false}
-                >
-                  <a href={`./images/Reasons/${el.image}`}>
-                    <LazyLoad>
-                      <img src={`./images/Reasons/${el.image}`} alt={el.text} />
-                    </LazyLoad>
-                  </a>
-                </LightGallery>
-              </div>
+              <AnimationOnScroll
+                animateIn="animate__fadeInRight"
+                animateOnce={true}
+              >
+                <div className="text-info">
+                  <p className="text">{el.text}</p>
+                </div>
+              </AnimationOnScroll>
+              <AnimationOnScroll
+                animateIn="animate__fadeInLeft"
+                animateOnce={true}
+              >
+                <div className="img-wrap">
+                  <LightGallery
+                    plugins={[lgThumbnail, lgZoom]}
+                    thumbWidth={100}
+                    actualSize={false}
+                  >
+                    <a href={`./images/Reasons/${el.image}`}>
+                      <LazyLoad>
+                        <img
+                          src={`./images/Reasons/${el.image}`}
+                          alt={el.text}
+                        />
+                      </LazyLoad>
+                    </a>
+                  </LightGallery>
+                </div>
+              </AnimationOnScroll>
             </div>
           );
         })}

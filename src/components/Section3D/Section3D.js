@@ -5,16 +5,22 @@ import { Link } from "react-router-dom";
 import icon360 from "../../assets/images/section3D/360-icon.jpg";
 import { useState } from "react";
 import LazyLoad from "react-lazy-load";
+
 function Section3D() {
   const [classBig, setClassBig] = useState(false);
   const changeClass = () => {
     setClassBig(!classBig);
   };
   return (
-    <section id="section3D" className={`${classBig ? "big" : ""}`}>
+    <section
+      id="section3D"
+      className={`${
+        classBig ? "big" : ""
+      } animate__animated animate__fadeInDown`}
+    >
       <div className="container">
         <div className="left-info">
-          <div className="sofa-wrap">
+          <div className="sofa-wrap animate__animated animate__fadeIn animate__delay-1s">
             <Sofa />
 
             <button
@@ -39,9 +45,15 @@ function Section3D() {
             частин. Це свого роду конструктор, який кожен може скласти по-своєму
             та створити унікальний предмет інтер'єру.
           </p>
-          <p className="price">Від 65 000 uah</p>
+
+          <p className="price animate__animated animate__fadeInUp animate__delay-1s">
+            Від 65 000 uah
+          </p>
           <Link to="/Catalog">
-            <Button text="Перейти в каталог" />
+            <Button
+              text="Перейти в каталог"
+              className="animate__animated animate__fadeInUp animate__delay-1s"
+            />
           </Link>
         </div>
       </div>

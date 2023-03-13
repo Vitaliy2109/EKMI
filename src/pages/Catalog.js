@@ -11,7 +11,6 @@ import PaginationWrap from "../components/Catalog/Pagination-wrap";
 import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
 import LazyLoad from "react-lazy-load";
 import { useState } from "react";
-
 function Catalog() {
   const [filtered, setFilterd] = useState(Products);
   const [classSmall, setClassSmall] = useState(false);
@@ -96,7 +95,7 @@ function Catalog() {
     <main>
       <section id="filterSection">
         <div className="container">
-          <ul className="list">
+          <ul className="list animate__animated animate__fadeInDown">
             {filterButtonsArr.map((el, index) => {
               return (
                 <FilterButton
@@ -120,7 +119,7 @@ function Catalog() {
       </section>
       <section id="section-catalog">
         <div className="container">
-          <div className="navigation-wrap">
+          <div className="navigation-wrap animate__animated animate__fadeInUp">
             <div className="left-info">
               <ul>
                 <li>
@@ -178,14 +177,16 @@ function Catalog() {
           <PaginationWrap
             btnPrev={() => {
               setCurrentPage(currentPage - 1);
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             btnNext={() => {
               setCurrentPage(currentPage + 1);
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             pageNumbers={returnPageNumbers}
             className=" top"
           />
-          <div className={`catalog-wrap${classSmall ? " small" : ""}`}>
+          <div className={`catalog-wrap${classSmall ? " small" : ""} `}>
             <LightGallery
               plugins={[lgThumbnail, lgZoom]}
               thumbWidth={100}

@@ -27,9 +27,11 @@ export function MapSection() {
   return (
     <section id="mapSection">
       <div className="container">
-        <h2 className="title">Контакти</h2>
+        <h2 className="title animate__animated animate__fadeInDown">
+          Контакти
+        </h2>
       </div>{" "}
-      <div className="map-wrap">
+      <div className="map-wrap animate__animated animate__fadeIn animate__delay-1s">
         <MapContainer {...settings}>
           <TileLayer attribution="OpenStreetMap" url={url} />
           {ContactsList.mainAdress

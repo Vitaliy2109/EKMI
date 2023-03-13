@@ -7,7 +7,7 @@ import facebookIcon from "../../assets/images/footer/icon-facebook.svg";
 import Modal from "./Modal";
 import ScrollToTop from "../common/ScrollToTop";
 import LazyLoad from "react-lazy-load";
-function Footer() {
+export default function Footer() {
   const [showModal, setShowModal] = useState(false);
   const { pathname } = useLocation();
   const toggleModal = () => {
@@ -18,6 +18,40 @@ function Footer() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
+  const links = [
+    {
+      linkto: "/Catalog",
+      text: "Каталог",
+    },
+    {
+      linkto: "/Models3D",
+      text: "2D, 3D Моделі",
+    },
+    {
+      linkto: "/",
+      text: "Про компанію",
+    },
+    {
+      linkto: "/Show-Room",
+      text: "Шоу-Рум",
+    },
+    {
+      linkto: "/Individual-Furniture",
+      text: "Індивідуальні меблі",
+    },
+    {
+      linkto: "/Dealers",
+      text: "Постачальникам",
+    },
+    {
+      linkto: "/Partners",
+      text: "Партнерам Дизайнерам",
+    },
+    {
+      linkto: "/Contacts",
+      text: "Контакти",
+    },
+  ];
 
   return (
     <footer id="footer">
@@ -31,48 +65,15 @@ function Footer() {
         </div>
         <div className="text-info">
           <ul className="list">
-            <li className="list__item">
-              <Link to="/Catalog" onClick={clickHandler}>
-                Каталог
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/" onClick={clickHandler}>
-                Про компанію
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/Individual-Furniture" onClick={clickHandler}>
-                Індивідуальні меблі
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/Partners" onClick={clickHandler}>
-                Партнерам Дизайнерам
-              </Link>
-            </li>
-          </ul>
-          <ul className="list">
-            <li className="list__item">
-              <Link to={"/Models3D"} onClick={clickHandler}>
-                2D, 3D Моделі
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/Show-Room" onClick={clickHandler}>
-                Шоу-Рум
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/Dealers" onClick={clickHandler}>
-                Постачальникам
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/Contacts" onClick={clickHandler}>
-                Контакти
-              </Link>
-            </li>
+            {links.map((el, index) => {
+              return (
+                <li className="list__item" key={index}>
+                  <Link to={el.linkto} onClick={clickHandler}>
+                    {el.text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="list socials-list">
@@ -117,5 +118,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

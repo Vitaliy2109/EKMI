@@ -8,24 +8,43 @@ import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Pagination } from "swiper";
 import { Link } from "react-router-dom";
+
 import LazyLoad from "react-lazy-load";
 SwiperCore.use([Autoplay]);
-function BestLife() {
+export default function BestLife() {
+  const images = [
+    {
+      img: "slide-1.png",
+    },
+    {
+      img: "slide-2.png",
+    },
+    {
+      img: "slide-3.png",
+    },
+  ];
   return (
     <section id="bestLife">
       <div className="background-color"></div>
       <div className="container">
         <div className="left-info">
-          <h1 className="title">Найкраще життя, створене для вас!</h1>
+          <h1 className="title animate__animated animate__fadeInDown">
+            Найкраще життя, створене для вас!
+          </h1>
           <Link to="/Catalog">
-            <Button text={"Перейти в каталог"}></Button>
+            <Button
+              text={"Перейти в каталог"}
+              className="animate__animated animate__fadeInUp animate__delay-1s"
+            ></Button>
           </Link>
         </div>
-        <div className="right-info">
-          <p className="since">Засновано у 1993 році</p>
 
+        <div className="right-info">
+          <p className="since animate__animated animate__fadeInDown animate__delay-1s">
+            Засновано у 1993 році
+          </p>
           <Swiper
-            className="swiper"
+            className="swiper animate__animated animate__fadeInRight animate__delay-1s"
             slidesPerView={1}
             modules={[EffectCube, Pagination]}
             effect={"cube"}
@@ -42,26 +61,18 @@ function BestLife() {
               clickable: true,
             }}
           >
-            <SwiperSlide>
-              <LazyLoad>
-                <img src="./images/bestLife/slide-1.png" alt="Sofa Image" />
-              </LazyLoad>
-            </SwiperSlide>
-            <SwiperSlide>
-              <LazyLoad>
-                <img src="./images/bestLife/slide-2.png" alt="Sofa Image" />
-              </LazyLoad>
-            </SwiperSlide>
-            <SwiperSlide>
-              <LazyLoad>
-                <img src="./images/bestLife/slide-3.png" alt="Sofa Image" />
-              </LazyLoad>
-            </SwiperSlide>
+            {images.map((el, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <LazyLoad>
+                    <img src={`./images/bestLife/${el.img}`} alt="Sofa Image" />
+                  </LazyLoad>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>
     </section>
   );
 }
-
-export default BestLife;

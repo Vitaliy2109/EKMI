@@ -3,6 +3,7 @@ import SwipeGallery from "../components/SwipeGallery/SwipeGallery";
 import TechnicalInformation from "../components/TechnicalInformation";
 import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
 import LatestPublications from "../components/LatestPublications/LatestPublications";
+
 function Models3D() {
   return (
     <main>

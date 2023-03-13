@@ -1,5 +1,6 @@
 import "../assets/scss/components/NumbersSection.scss";
 
+import { AnimationOnScroll } from "react-animation-on-scroll";
 function NumbersSection(props) {
   const { title = "", className = "" } = props;
   const items = [
@@ -19,19 +20,25 @@ function NumbersSection(props) {
   return (
     <section id="numbers-section" className={className}>
       <div className="container">
-        <h2 className="title">{title}</h2>
-        <ul className="list">
-          {items.map((item, index) => {
-            return (
-              <li className="list__item" key={index}>
-                <span className={`number number-${item.number}`}>
-                  {item.number}
-                </span>
-                <p className="info">{item.text}</p>
-              </li>
-            );
-          })}
-        </ul>
+        <h2 className="title animate__animated animate__fadeInDown">{title}</h2>
+        <AnimationOnScroll
+          animateIn="animate__fadeInDown"
+          animateOnce={true}
+          delay={250}
+        >
+          <ul className="list">
+            {items.map((item, index) => {
+              return (
+                <li className="list__item" key={index}>
+                  <span className={`number number-${item.number}`}>
+                    {item.number}
+                  </span>
+                  <p className="info">{item.text}</p>
+                </li>
+              );
+            })}
+          </ul>{" "}
+        </AnimationOnScroll>
       </div>
     </section>
   );

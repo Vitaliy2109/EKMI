@@ -8,7 +8,7 @@ import ContactsItem from "../components/ContactsList/ContactsItem";
 import { Link } from "react-router-dom";
 import Button from "../components/common/Button";
 import "../assets/scss/components/Deallers.scss";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 export function Dealers() {
   const info = [
     {
@@ -45,31 +45,37 @@ export function Dealers() {
         formClass="deallers"
         className="deallers"
       />
-      <section id="ShowRoomsSmallList">
-        <div className="container">
-          <h2 className="title">Наші шоу-руми</h2>
-          <div className="small-list">
-            {ContactsList.additional.map((el, index) => {
-              if (el.city === "Вінниця") {
-                return (
-                  <ContactsItem
-                    key={index}
-                    city={el.city}
-                    adressLink={el.adressLink}
-                    adress={el.adress}
-                    location={el.location}
-                    email={el.email}
-                    phone={el.phone}
-                  />
-                );
-              }
-            })}
+      <AnimationOnScroll
+        animateIn="animate__fadeInUp"
+        animateOnce={true}
+        delay={250}
+      >
+        <section id="ShowRoomsSmallList">
+          <div className="container">
+            <h2 className="title">Наші шоу-руми</h2>
+            <div className="small-list">
+              {ContactsList.additional.map((el, index) => {
+                if (el.city === "Вінниця") {
+                  return (
+                    <ContactsItem
+                      key={index}
+                      city={el.city}
+                      adressLink={el.adressLink}
+                      adress={el.adress}
+                      location={el.location}
+                      email={el.email}
+                      phone={el.phone}
+                    />
+                  );
+                }
+              })}
+            </div>
+            <Link to="/Contacts">
+              <Button text="Дивитися всі" />
+            </Link>
           </div>
-          <Link to="/Contacts">
-            <Button text="Дивитися всі" />
-          </Link>
-        </div>
-      </section>
+        </section>
+      </AnimationOnScroll>
     </main>
   );
 }

@@ -44,7 +44,10 @@ function SwipeGallery(props) {
     ],
   };
   return (
-    <section id="slideGallery" className={className}>
+    <section
+      id="slideGallery"
+      className={`${className} animate__animated animate__fadeInUp `}
+    >
       <div className="container">
         <Slider {...params}>
           {ProdList.map((item, index) => {

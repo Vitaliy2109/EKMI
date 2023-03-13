@@ -5,11 +5,13 @@ import Slider from "react-slick";
 import ProdList from "../../data/products.json";
 import React from "react";
 import LatestPublicationsItem from "./LatestPublicationsItem";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 function LatestPublications() {
   const params = {
     dots: false,
     infinite: true,
-    speed: 400,
+    autoplaySpeed: 1800,
+    speed: 600,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -26,20 +28,28 @@ function LatestPublications() {
   return (
     <section id="latest-publications">
       <div className="container">
-        <h2 className="title">Останні публікації</h2>
-        <Slider {...params}>
-          {ProdList.map((item, index) => {
-            if (item.islatest === "true") {
-              return (
-                <LatestPublicationsItem
-                  key={index}
-                  photo={item.photo}
-                  name={item.name}
-                />
-              );
-            }
-          })}
-        </Slider>
+        <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+          <h2 className="title">Останні публікації</h2>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn="animate__fadeInUp"
+          animateOnce={true}
+          delay={300}
+        >
+          <Slider {...params}>
+            {ProdList.map((item, index) => {
+              if (item.islatest === "true") {
+                return (
+                  <LatestPublicationsItem
+                    key={index}
+                    photo={item.photo}
+                    name={item.name}
+                  />
+                );
+              }
+            })}
+          </Slider>
+        </AnimationOnScroll>
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import "lightgallery/scss/lg-thumbnail.scss";
 import LightGallery from "lightgallery/react";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 function GallerySection() {
   const items = [
     {
@@ -25,28 +25,30 @@ function GallerySection() {
   return (
     <section id="gallerySection">
       <div className="container">
-        <LightGallery
-          plugins={[lgThumbnail, lgZoom]}
-          thumbWidth={100}
-          actualSize={false}
-          arrows={true}
-        >
-          {items.map((el, index) => {
-            return (
-              <a
-                href={`./images/gallery-section/${el.img}`}
-                className="item"
-                key={index}
-              >
-                <img
-                  src={`./images/gallery-section/${el.img}`}
-                  alt="Gallery Image"
-                />
-                <i className="icon-zoom-in"></i>
-              </a>
-            );
-          })}
-        </LightGallery>
+        <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
+          <LightGallery
+            plugins={[lgThumbnail, lgZoom]}
+            thumbWidth={100}
+            actualSize={false}
+            arrows={true}
+          >
+            {items.map((el, index) => {
+              return (
+                <a
+                  href={`./images/gallery-section/${el.img}`}
+                  className="item"
+                  key={index}
+                >
+                  <img
+                    src={`./images/gallery-section/${el.img}`}
+                    alt="Gallery Image"
+                  />
+                  <i className="icon-zoom-in"></i>
+                </a>
+              );
+            })}
+          </LightGallery>
+        </AnimationOnScroll>
       </div>
     </section>
   );

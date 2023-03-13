@@ -4,7 +4,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, EffectFade, Navigation } from "swiper";
 import ProdList from "../data/products.json";
@@ -67,13 +67,23 @@ export default function Partners() {
           {infoArr.map((el, index) => {
             return (
               <div className="info-wrap" key={index}>
-                <div className="text-info">
-                  <h3 className="title">{el.title}</h3>
-                  {el.subtitle ? <p className="subtitle">{el.subtitle}</p> : ""}
-                  <p className="info">{el.info}</p>
+                <div className="text-info animate__animated animate__fadeInLeft">
+                  <h3 className="title animate__animated animate__fadeInDown animate__delay-1s">
+                    {el.title}
+                  </h3>
+                  {el.subtitle ? (
+                    <p className="subtitle animate__animated animate__fadeInDown animate__delay-1s">
+                      {el.subtitle}
+                    </p>
+                  ) : (
+                    ""
+                  )}
+                  <p className="info animate__animated animate__fadeInDown animate__delay-1s">
+                    {el.info}
+                  </p>
                 </div>
 
-                <div className="img-wrap">
+                <div className="img-wrap text-info animate__animated animate__fadeInRight">
                   <LazyLoad>
                     <img src={`./images/MainProd/${el.image}`} alt={el.info} />
                   </LazyLoad>
@@ -85,94 +95,136 @@ export default function Partners() {
       </section>
       <section id="whyWithUs">
         <div className="container">
-          <h2 className="title">Чому з нами комфортно працювати</h2>
-          <Swiper
-            loop={true}
-            effect={"fade"}
-            navigation={true}
-            pagination={{
-              clickable: false,
-            }}
-            modules={[EffectFade, Pagination, Navigation]}
-            autoplay={true}
+          <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+            <h2 className="title">Чому з нами комфортно працювати</h2>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadeInUp"
+            delay={300}
+            animateOnce={true}
           >
-            {facts.map((item, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <div className="item-wrap">
-                    <div className="item">
-                      <div className="img-wrap">
-                        <LazyLoad>
-                          <img
-                            src={`./images/Facts/${item.image}`}
-                            alt={item.title}
-                          />
-                        </LazyLoad>
-                      </div>
-                      <div className="text-info">
-                        <p className="suptitle">Факти:</p>
-                        <h3 className="title">{item.title}</h3>
-                        <p className="subtitle">{item.subtitle}</p>
+            <Swiper
+              loop={true}
+              effect={"fade"}
+              navigation={true}
+              pagination={{
+                clickable: false,
+              }}
+              modules={[EffectFade, Pagination, Navigation]}
+              autoplay={true}
+            >
+              {facts.map((item, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <div className="item-wrap">
+                      <div className="item">
+                        <div className="img-wrap">
+                          <LazyLoad>
+                            <img
+                              src={`./images/Facts/${item.image}`}
+                              alt={item.title}
+                            />
+                          </LazyLoad>
+                        </div>
+                        <div className="text-info">
+                          <AnimationOnScroll
+                            animateIn="animate__fadeInDown"
+                            delay={700}
+                            animateOnce={true}
+                          >
+                            <p className="suptitle">Факти:</p>
+                          </AnimationOnScroll>
+
+                          <AnimationOnScroll
+                            animateIn="animate__fadeInDown"
+                            delay={1100}
+                            animateOnce={true}
+                          >
+                            <h3 className="title">{item.title}</h3>
+                          </AnimationOnScroll>
+
+                          <AnimationOnScroll
+                            animateIn="animate__fadeInDown"
+                            delay={1500}
+                            animateOnce={true}
+                          >
+                            <p className="subtitle">{item.subtitle}</p>
+                          </AnimationOnScroll>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </AnimationOnScroll>
         </div>
       </section>
       <section id="allProducts">
         <div className="container">
-          <h2 className="title">Всі товари</h2>
-          <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={4}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={true}
-            loop={true}
-            autoplay={false}
-            modules={[EffectCoverflow, Pagination]}
-            className="mySwiper3d"
-            resizeObserver={true}
-            breakpoints={{
-              340: {
-                slidesPerView: 2,
-              },
-              640: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 4,
-              },
-            }}
+          <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+            <h2 className="title">Всі товари</h2>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadeInDown"
+            animateOnce={true}
+            delay={400}
           >
-            {ProdList.map((el, index) => {
-              return (
-                <SwiperSlide key={index} className="partners">
-                  <div className="item-wrap">
-                    <LazyLoad>
-                      <img
-                        src={`./images/products/${el.photo}`}
-                        alt={el.name}
-                      />
-                    </LazyLoad>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-          <Link to="/Catalog">
-            <Button text="Перейти в каталог" />
-          </Link>
+            <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={4}
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              pagination={true}
+              loop={true}
+              autoplay={false}
+              modules={[EffectCoverflow, Pagination]}
+              className="mySwiper3d"
+              resizeObserver={true}
+              breakpoints={{
+                340: {
+                  slidesPerView: 2,
+                },
+                640: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 4,
+                },
+              }}
+            >
+              {ProdList.map((el, index) => {
+                return (
+                  <SwiperSlide key={index} className="partners">
+                    <div className="item-wrap">
+                      <LazyLoad>
+                        <img
+                          src={`./images/products/${el.photo}`}
+                          alt={el.name}
+                        />
+                      </LazyLoad>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadeInUp"
+            animateOnce={true}
+            delay={700}
+          >
+            <Link to="/Catalog">
+              <Button text="Перейти в каталог" />
+            </Link>
+          </AnimationOnScroll>
         </div>
       </section>
 

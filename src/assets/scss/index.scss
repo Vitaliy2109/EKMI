@@ -24,6 +24,7 @@ body {
   @include fz(16);
   font-family: "Raleway";
   min-width: 373px;
+  overflow-x: hidden;
 }
 
 a,
