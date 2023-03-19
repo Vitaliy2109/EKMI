@@ -14,8 +14,10 @@
         width: 732px;
         height: 380px;
         position: relative;
+        cursor: -webkit-grab;
         cursor: grab;
         &:active {
+          cursor: -webkit-grabbing;
           cursor: grabbing;
         }
         .sofa {
@@ -26,10 +28,14 @@
       .icon-wrap {
         width: 80px;
         position: absolute;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
         user-select: none;
         left: 0;
         top: 0;
         img {
+          -o-object-fit: contain;
           object-fit: contain;
         }
       }

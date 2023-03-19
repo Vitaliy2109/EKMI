@@ -15,6 +15,7 @@ h2.title.deallers {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      -moz-column-gap: 30px;
       column-gap: 30px;
       row-gap: 80px;
       .item-wrap {

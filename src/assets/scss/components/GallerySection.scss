@@ -16,6 +16,7 @@
           height: calc(100%);
           width: 100%;
           background-color: rgba(255, 150, 25, 0.5);
+          -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
           transform: translateY(-100%);
           transition: all 0.3s ease;
@@ -37,6 +38,7 @@
           // transition-delay: 0.2s;
         }
         img {
+          -o-object-fit: cover;
           object-fit: cover;
         }
       }

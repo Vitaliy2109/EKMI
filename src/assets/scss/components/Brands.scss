@@ -6,6 +6,7 @@
       gap: 83px;
       .item {
         img {
+          -o-object-fit: contain;
           object-fit: contain;
         }
       }

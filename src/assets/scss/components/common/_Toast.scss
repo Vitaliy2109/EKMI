@@ -1,3 +1,11 @@
+@-webkit-keyframes animate {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 @keyframes animate {
   from {
     width: 0;
@@ -33,6 +41,7 @@
     width: 100%;
     right: 0;
     top: -5px;
+    -webkit-animation: animate 6s;
     animation: animate 6s;
   }
   &.success {

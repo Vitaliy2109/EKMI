@@ -6,6 +6,7 @@
   padding: 25px 0;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   .container {
     display: flex;
@@ -33,6 +34,7 @@
           pointer-events: none;
         }
         img {
+          -o-object-fit: contain;
           object-fit: contain;
           pointer-events: none;
         }
@@ -49,6 +51,17 @@
 
 // RESPONSE
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -57,6 +70,16 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
   }
 }
 @keyframes fadeOut {
@@ -91,6 +114,7 @@
             height: 100%;
             width: 30px;
             img {
+              -o-object-fit: contain;
               object-fit: contain;
             }
           }
@@ -128,6 +152,7 @@
               height: auto;
 
               .list__item {
+                -webkit-animation: fadeOut 0.5s ease;
                 animation: fadeOut 0.5s ease;
                 a {
                   font-size: 17px;
@@ -144,23 +169,30 @@
               .list {
                 transform: translateX(0);
                 .list__item {
+                  -webkit-animation: fadeIn 0.7s ease-in both;
                   animation: fadeIn 0.7s ease-in both;
                   &:nth-child(2) {
+                    -webkit-animation-delay: 0s;
                     animation-delay: 0s;
                   }
                   &:nth-child(3) {
+                    -webkit-animation-delay: 0.1s;
                     animation-delay: 0.1s;
                   }
                   &:nth-child(4) {
+                    -webkit-animation-delay: 0.15s;
                     animation-delay: 0.15s;
                   }
                   &:nth-child(5) {
+                    -webkit-animation-delay: 0.2s;
                     animation-delay: 0.2s;
                   }
                   &:nth-child(6) {
+                    -webkit-animation-delay: 0.25s;
                     animation-delay: 0.25s;
                   }
                   &:nth-child(7) {
+                    -webkit-animation-delay: 0.3s;
                     animation-delay: 0.3s;
                   }
                 }

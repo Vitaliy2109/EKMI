@@ -62,6 +62,9 @@
       margin-bottom: 80px;
     }
     .item-wrap {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
       user-select: none;
       .item {
         display: flex;
@@ -155,6 +158,9 @@
     }
     .mySwiper3d {
       padding: 50px 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
       user-select: none;
       margin-bottom: 60px;
       .item-wrap {

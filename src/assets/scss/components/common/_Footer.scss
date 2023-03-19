@@ -30,6 +30,7 @@
           pointer-events: none;
         }
         img {
+          -o-object-fit: contain;
           object-fit: contain;
           pointer-events: none;
         }
@@ -39,6 +40,7 @@
       .list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 97px;
         column-gap: 97px;
         .list__item {
           display: flex;
@@ -116,6 +118,7 @@
               }
             }
             img {
+              -o-object-fit: contain;
               object-fit: contain;
             }
           }

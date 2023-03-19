@@ -48,6 +48,7 @@
 
         img {
           transition: all 0.2s ease;
+          -o-object-fit: contain;
           object-fit: contain;
         }
         p {
@@ -364,6 +365,7 @@
             width: 100%;
             background-color: #f2f3f5;
             img {
+              -o-object-fit: contain;
               object-fit: contain;
               max-width: 260px;
             }

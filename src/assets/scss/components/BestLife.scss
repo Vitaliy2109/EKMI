@@ -37,7 +37,7 @@
     .right-info {
       display: flex;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
       gap: 35px;
       .since {
         font-weight: 400;

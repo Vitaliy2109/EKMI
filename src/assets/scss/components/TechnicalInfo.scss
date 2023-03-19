@@ -30,7 +30,7 @@
         gap: 35px;
         .list__item {
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           gap: 105px;
           .title {
             font-size: 16px;
@@ -40,7 +40,7 @@
             color: #343434;
             width: 155px;
             position: relative;
-            align-self: start;
+            align-self: flex-start;
             &:before {
               content: "";
               position: absolute;
