@@ -44,7 +44,11 @@ export default function BestLife() {
             Засновано у 1993 році
           </p>
           <Swiper
-            className="swiper animate__animated animate__fadeInRight animate__delay-1s"
+            className={`swiper ${
+              window.innerWidth > 1180
+                ? "animate__animated animate__fadeInRight animate__delay-1s"
+                : "animate__animated animate__fadeInUp"
+            }`}
             slidesPerView={1}
             modules={[EffectCube, Pagination]}
             effect={"cube"}

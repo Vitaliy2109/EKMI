@@ -12,7 +12,11 @@ function TechnicalInformation() {
               {Object.keys(TechInfo[0]).map((key, index) => (
                 <li key={index} className="list__item">
                   <AnimationOnScroll
-                    animateIn="animate__fadeInLeft"
+                    animateIn={
+                      window.innerWidth > 1180
+                        ? "animate__fadeInLeft"
+                        : "animate__fadeInUp"
+                    }
                     animateOnce={true}
                     delay={500}
                   >
@@ -20,7 +24,11 @@ function TechnicalInformation() {
                   </AnimationOnScroll>
 
                   <AnimationOnScroll
-                    animateIn="animate__fadeInRight"
+                    animateIn={
+                      window.innerWidth > 1180
+                        ? "animate__fadeInRight"
+                        : "animate__fadeInUp"
+                    }
                     animateOnce={true}
                     delay={500}
                   >

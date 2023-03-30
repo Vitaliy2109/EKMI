@@ -37,7 +37,11 @@ function Reasons(props) {
             <div className="info-block" key={index}>
               <h3 className="title">{el.title}</h3>
               <AnimationOnScroll
-                animateIn="animate__fadeInRight"
+                animateIn={
+                  window.innerWidth > 1180
+                    ? "animate__fadeInRight"
+                    : "animate__fadeInUp"
+                }
                 animateOnce={true}
               >
                 <div className="text-info">
@@ -45,7 +49,11 @@ function Reasons(props) {
                 </div>
               </AnimationOnScroll>
               <AnimationOnScroll
-                animateIn="animate__fadeInLeft"
+                animateIn={
+                  window.innerWidth > 1180
+                    ? "animate__fadeInLeft"
+                    : "animate__fadeInUp"
+                }
                 animateOnce={true}
               >
                 <div className="img-wrap">

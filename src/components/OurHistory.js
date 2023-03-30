@@ -26,7 +26,11 @@ function OurHistory() {
           </div>
 
           <AnimationOnScroll
-            animateIn="animate__fadeInRight"
+            animateIn={
+              window.innerWidth > 1180
+                ? "animate__fadeInRight"
+                : "animate__fadeInUp"
+            }
             delay={0.5}
             animateOnce={true}
           >
@@ -39,13 +43,16 @@ function OurHistory() {
         </div>
         <div className="year">
           <AnimationOnScroll
-            animateIn="animate__fadeInLeftBig"
+            animateIn={
+              window.innerWidth > 1180
+                ? "animate__fadeInLeftBig"
+                : "animate__fadeInUp"
+            }
             animateOnce={true}
             className="small"
           >
             <p className="small">1993</p>
           </AnimationOnScroll>
-
           <AnimationOnScroll
             animateIn="animate__zoomIn"
             animateOnce={true}
@@ -54,7 +61,11 @@ function OurHistory() {
             <p className="big">25 років</p>
           </AnimationOnScroll>
           <AnimationOnScroll
-            animateIn="animate__fadeInRightBig"
+            animateIn={
+              window.innerWidth > 1180
+                ? "animate__fadeInLeftBig"
+                : "animate__fadeInUp"
+            }
             animateOnce={true}
             className="small"
           >

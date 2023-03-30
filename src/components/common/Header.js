@@ -4,18 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/images/header/logo.png";
 import phoneIcon from "../../assets/images/header/phone.svg";
+import ProgressBar from "./ProgresBar";
 import LazyLoad from "react-lazy-load";
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const { pathname } = useLocation();
-  const changeClass = () => {
-    setIsActive(!isActive);
-  };
-  const clickHandler = (e) => {
-    if (`#${pathname}` === e.target.getAttribute("href")) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
   const links = [
     {
       linkto: "/Catalog",
@@ -50,8 +43,18 @@ export default function Header() {
       text: "Контакти",
     },
   ];
+  const changeClass = () => {
+    setIsActive(!isActive);
+  };
+  const clickHandler = (e) => {
+    if (`#${pathname}` === e.target.getAttribute("href")) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <header id="header">
+      <ProgressBar />
       <div className="container">
         <nav className="navigation">
           <ul className="list">
@@ -90,7 +93,12 @@ export default function Header() {
             +38 (099)-638-45-37
           </a>
         </div>
-        <div className="mobile-wrap">
+        <div
+          className="mobile-wrap"
+          onBlur={() => {
+            setIsActive(false);
+          }}
+        >
           <div className="phone-wrap">
             <a href="tel:+38099-638-45-37" className="tel">
               <LazyLoad>
