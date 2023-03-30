@@ -69,7 +69,7 @@ export default function BestLife() {
               return (
                 <SwiperSlide key={index}>
                   <LazyLoad>
-                    <img src={`./images/bestLife/${el.img}`} alt="Sofa Image" />
+                    <img src={`./images/bestLife/${el.img}`} alt="Sofa" />
                   </LazyLoad>
                 </SwiperSlide>
               );

@@ -16,7 +16,7 @@ function FeedbackSection(props) {
             animateOnce={true}
           >
             <LazyLoad>
-              <img src={image} alt="Sofa Image" />
+              <img src={image} alt="Sofa" />
             </LazyLoad>
           </AnimationOnScroll>
         </div>

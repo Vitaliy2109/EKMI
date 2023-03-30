@@ -13,7 +13,7 @@ export default function ContactsItem(props) {
         </li>
         <li className="item">
           <p className="title">Адреса: </p>
-          <a href={adressLink} target="_blank">
+          <a href={adressLink} target="_blank" rel="noreferrer noopener">
             {adress}{" "}
           </a>
         </li>

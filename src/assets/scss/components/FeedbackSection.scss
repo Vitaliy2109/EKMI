@@ -4,8 +4,8 @@
 
   .container {
     display: flex;
-    justify-content: end;
-    align-items: start;
+    justify-content: flex-end;
+    align-items: flex-start;
     position: relative;
     .img-wrap {
       position: absolute;

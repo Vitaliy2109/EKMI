@@ -98,7 +98,7 @@
       }
       &:nth-child(2) {
         flex-direction: row-reverse;
-        align-items: start;
+        align-items: flex-start;
         margin-bottom: 131px;
         .img-wrap {
           transform: scale(-1, 1);

@@ -399,7 +399,7 @@
       align-items: center;
       gap: 15px;
       &.top {
-        justify-content: end;
+        justify-content: flex-end;
         margin-bottom: 40px;
       }
       .page-btn {
