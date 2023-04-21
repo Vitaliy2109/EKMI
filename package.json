@@ -4,6 +4,7 @@
   "homepage": "https://vitaliy2109.github.io/EKMI/",
   "private": true,
   "dependencies": {
+    "@fancyapps/ui": "^5.0.16",
     "@react-three/drei": "^9.56.26",
     "@react-three/fiber": "^8.11.5",
     "@react-three/gltfjsx": "^4.3.4",
