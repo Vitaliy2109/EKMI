@@ -1,10 +1,6 @@
 import "../assets/scss/components/GallerySection.scss";
-import "lightgallery/scss/lightgallery.scss";
-import "lightgallery/scss/lg-zoom.scss";
-import "lightgallery/scss/lg-thumbnail.scss";
-import LightGallery from "lightgallery/react";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 function GallerySection() {
   const items = [
@@ -26,15 +22,11 @@ function GallerySection() {
     <section id="gallerySection">
       <div className="container">
         <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>
-          <LightGallery
-            plugins={[lgThumbnail, lgZoom]}
-            thumbWidth={100}
-            actualSize={false}
-            arrows={true}
-          >
+          <div className="items-wrap">
             {items.map((el, index) => {
               return (
-                <a
+                <div
+                  data-fancybox="gallery"
                   href={`./images/gallery-section/${el.img}`}
                   className="item"
                   key={index}
@@ -44,10 +36,10 @@ function GallerySection() {
                     alt="Gallery Image"
                   />
                   <i className="icon-zoom-in"></i>
-                </a>
+                </div>
               );
             })}
-          </LightGallery>
+          </div>
         </AnimationOnScroll>
       </div>
     </section>

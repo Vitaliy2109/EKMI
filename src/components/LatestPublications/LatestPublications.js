@@ -14,7 +14,7 @@ function LatestPublications() {
     speed: 600,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     centerMode: false,
     responsive: [
       {

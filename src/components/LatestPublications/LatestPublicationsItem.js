@@ -1,10 +1,16 @@
 import LazyLoad from "react-lazy-load";
+
 function LatestPublicationsItem(props) {
   const { photo, name } = props;
+
   return (
     <div className="item-wrap">
       <div className="item">
-        <div className="img-wrap">
+        <div
+          className="img-wrap"
+          data-fancybox="gallery"
+          href={`./images/products/${photo}`}
+        >
           <LazyLoad>
             <img src={`./images/products/${photo}`} alt={name} />
           </LazyLoad>

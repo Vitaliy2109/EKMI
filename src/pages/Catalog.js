@@ -3,9 +3,8 @@ import "lightgallery/scss/lightgallery.scss";
 import "lightgallery/scss/lg-zoom.scss";
 import "lightgallery/scss/lg-thumbnail.scss";
 import Products from "../data/products.json";
-import LightGallery from "lightgallery/react";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import FilterButton from "../components/Catalog/FilterButton";
 import PaginationWrap from "../components/Catalog/Pagination-wrap";
 import FeedbackSection from "../components/FeedbackSection/Feedbacksection";
@@ -53,6 +52,27 @@ function Catalog() {
       image: "image-7.jpg",
     },
   ];
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    compact: false,
+
+    animated: false,
+    showClass: false,
+    hideClass: false,
+
+    dragToClose: false,
+
+    Images: {
+      zoom: true,
+    },
+
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],
+        right: ["close"],
+      },
+    },
+  });
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(filtered.length / itemsPerPage); i++) {
     pageNumbers.push(i);
@@ -187,11 +207,7 @@ function Catalog() {
             className=" top"
           />
           <div className={`catalog-wrap${classSmall ? " small" : ""} `}>
-            <LightGallery
-              plugins={[lgThumbnail, lgZoom]}
-              thumbWidth={100}
-              actualSize={false}
-            >
+            <ul className="items-wrap">
               {filtered
                 .slice(
                   (currentPage - 1) * itemsPerPage,
@@ -199,16 +215,18 @@ function Catalog() {
                 )
                 .map((elem, index) => {
                   return (
-                    <a
-                      href={`./images/products/${elem.photo}`}
-                      className="item"
-                      key={index}
-                    >
-                      <img
-                        src={`./images/products/${elem.photo}`}
-                        alt={elem.name}
-                      />
-
+                    <li className="item" key={index}>
+                      <div
+                        data-fancybox="gallery"
+                        href={`./images/products/${elem.photo}`}
+                        className="img-wrap"
+                      >
+                        <img
+                          className="rounded"
+                          src={`./images/products/${elem.photo}`}
+                          alt={elem.name}
+                        />
+                      </div>
                       <div className="text-wrap">
                         {" "}
                         <p className="name">{elem.name}</p>
@@ -216,10 +234,10 @@ function Catalog() {
                           <p className="description">{elem.description}</p>
                         ) : null}
                       </div>
-                    </a>
+                    </li>
                   );
                 })}
-            </LightGallery>
+            </ul>
             <PaginationWrap
               btnPrev={() => {
                 setCurrentPage(currentPage - 1);

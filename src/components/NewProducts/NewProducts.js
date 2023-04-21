@@ -36,6 +36,7 @@ function NewProducts() {
       },
     ],
   };
+
   return (
     <section id="newProducts">
       <div className="container">

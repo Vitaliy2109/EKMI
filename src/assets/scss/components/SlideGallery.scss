@@ -6,6 +6,9 @@
       .item {
         position: relative;
         overflow: hidden;
+        .img-wrap {
+          height: 190px;
+        }
         &:before {
           content: "";
           position: absolute;
@@ -16,6 +19,7 @@
           backdrop-filter: blur(4px);
           transform: translateY(-103%);
           transition: all 0.3s ease;
+          pointer-events: none;
         }
         &:hover:before {
           transform: translate(0);
@@ -31,9 +35,6 @@
           font-size: 55px;
           color: #fff;
           transition: all 0.5s ease;
-        }
-        img {
-          pointer-events: none;
         }
       }
     }

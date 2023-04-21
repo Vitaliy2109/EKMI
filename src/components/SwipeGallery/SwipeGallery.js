@@ -1,13 +1,12 @@
 import "../../assets/scss/components/SlideGallery.scss";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import "lightgallery/scss/lightgallery.scss";
-import "lightgallery/scss/lg-zoom.scss";
-import "lightgallery/scss/lg-thumbnail.scss";
-import LightGallery from "lightgallery/react";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import Slider from "react-slick";
 import LazyLoad from "react-lazy-load";
 import ProdList from "../../data/products.json";
+import { useState } from "react";
 
 function SwipeGallery(props) {
   const { className } = props;
@@ -43,6 +42,34 @@ function SwipeGallery(props) {
       },
     ],
   };
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    compact: false,
+
+    animated: false,
+    showClass: false,
+    hideClass: false,
+
+    dragToClose: false,
+
+    Images: {
+      zoom: true,
+    },
+
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],
+        right: ["close"],
+      },
+    },
+    Thumbs: {
+      type: "none",
+    },
+  });
+
+  let evenItems = [...ProdList];
+  evenItems.splice(evenItems.length - 1);
+
   return (
     <section
       id="slideGallery"
@@ -50,27 +77,29 @@ function SwipeGallery(props) {
     >
       <div className="container">
         <Slider {...params}>
-          {ProdList.map((item, index) => {
-            if (item.name !== "Malta") {
+          {(ProdList.length % 2 === 0 ? ProdList : evenItems).map(
+            (item, index) => {
               return (
                 <div className="item-wrap" key={index}>
                   <div className="item">
-                    <LightGallery>
-                      <a href={`./images/products/${item.photo}`}>
-                        <LazyLoad>
-                          <img
-                            src={`./images/products/${item.photo}`}
-                            alt={item.name}
-                          />
-                        </LazyLoad>
-                        <i className="icon-zoom-in"></i>
-                      </a>
-                    </LightGallery>
+                    <div
+                      data-fancybox="gallery"
+                      href={`./images/products/${item.photo}`}
+                      className="img-wrap"
+                    >
+                      <LazyLoad>
+                        <img
+                          src={`./images/products/${item.photo}`}
+                          alt={item.name}
+                        />
+                      </LazyLoad>
+                      <i className="icon-zoom-in"></i>
+                    </div>
                   </div>
                 </div>
               );
             }
-          })}{" "}
+          )}
         </Slider>
       </div>
     </section>

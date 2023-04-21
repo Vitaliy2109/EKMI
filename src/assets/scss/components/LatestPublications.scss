@@ -5,6 +5,21 @@
       margin-bottom: 80px;
     }
     .slick-slider {
+      .item-wrap {
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 23px;
+
+          .img-wrap {
+            height: 250px;
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+      }
       .slick-arrow {
         &.slick-prev {
           left: -45px;

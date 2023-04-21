@@ -4,9 +4,11 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, EffectFade, Navigation } from "swiper";
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import ProdList from "../data/products.json";
 import Button from "../components/common/Button";
 import { Link } from "react-router-dom";
@@ -59,7 +61,27 @@ export default function Partners() {
       image: "image-4.png",
     },
   ];
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    compact: false,
 
+    animated: false,
+    showClass: false,
+    hideClass: false,
+
+    dragToClose: false,
+
+    Images: {
+      zoom: true,
+    },
+
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],
+        right: ["close"],
+      },
+    },
+  });
   return (
     <main>
       <section id="mainProd">
@@ -203,7 +225,11 @@ export default function Partners() {
               {ProdList.map((el, index) => {
                 return (
                   <SwiperSlide key={index} className="partners">
-                    <div className="item-wrap">
+                    <div
+                      className="item-wrap"
+                      data-fancybox="gallery"
+                      href={`./images/products/${el.photo}`}
+                    >
                       <LazyLoad>
                         <img
                           src={`./images/products/${el.photo}`}

@@ -1,7 +1,7 @@
 #gallerySection {
   margin-bottom: 160px;
   .container {
-    .lg-react-element {
+    .items-wrap {
       display: flex;
       gap: 30px;
 
@@ -9,7 +9,7 @@
         max-width: 270px;
         position: relative;
         overflow: hidden;
-
+        cursor: pointer;
         &:before {
           content: "";
           position: absolute;
