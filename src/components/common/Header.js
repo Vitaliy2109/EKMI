@@ -49,6 +49,7 @@ export default function Header() {
   const clickHandler = (e) => {
     if (`#${pathname}` === e.target.getAttribute("href")) {
       window.scrollTo({ top: 0, behavior: "smooth" });
+      setIsActive(false);
     }
   };
 
